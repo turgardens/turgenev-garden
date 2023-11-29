@@ -2,6 +2,7 @@
   padding-top: 150px;
   padding-bottom: 230px;
   background: #fff;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -13,6 +14,8 @@
 
 .video {
   position: relative;
+  transform: rotate(7deg) translateX(250px) translateY(-25px)
+    translate3d(0, 0, 0);
   cursor: pointer;
 }
 
@@ -227,6 +230,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .video {
+    transform: rotate(-3deg) translateX(-10px) translateY(0px)
+      translate3d(0, 0, 0);
+    cursor: pointer;
   }
 
   .videoButton {

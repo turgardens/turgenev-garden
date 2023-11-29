@@ -552,7 +552,12 @@
   }
 
   .cardProduct {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+  }
+
+  .swiperImageContainer {
+    width: 650px;
+    height: 550px;
   }
 }
 
@@ -619,8 +624,14 @@
 
 @media screen and (min-width: 0px) and (max-width: 850px) {
   .cardProduct {
+    padding-bottom: 0px;
     height: auto;
     max-height: unset;
+  }
+
+  .cardProductMain {
+    padding-top: 90px;
+    align-items: center;
   }
 
   .cardProductMainTitleContainer {
@@ -638,7 +649,9 @@
   }
 
   .cardProductMainTitle {
+    text-align: center;
     margin: auto;
+    margin-bottom: 30px;
     max-width: 700px;
     font-size: 60px;
     line-height: 50px;
@@ -646,6 +659,11 @@
 
   .cardProduct .swiperContainer::after {
     bottom: -100px;
+  }
+
+  .swiperImageContainer {
+    width: 650px;
+    height: 350px;
   }
 
   .cardProduct .swiperSlideImg {
@@ -661,6 +679,10 @@
   // .cardProductSwiperWrapper {
   //   margin-bottom: 50px;
   // }
+
+  .cardProductSwiperWrapper {
+    margin-bottom: 40px;
+  }
 
   .cardProductSwiperWrapper,
   .cardProductDescription {

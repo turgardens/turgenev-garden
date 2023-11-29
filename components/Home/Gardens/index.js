@@ -30,27 +30,10 @@ const paramsSwiper = {
 export default function Gardens() {
 
     const containerRef = useRef(null);
+
     const textRef = useRef(null);
     const mapRef = useRef(null);
-
-    useEffect(() => {
-        const container = containerRef.current;
-        const text = textRef.current;
-
-        gsap.set(container, { perspective: 600 }, { position: 'relative' }, { zIndex: -1 });
-
-        gsap.to(text, {
-            opacity: 1.6,
-            ease: 'power1.out',
-            scrollTrigger: {
-                trigger: container,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: true,
-                // markers: true, маркер проверка срабатывания scroll-trigger
-            },
-        });
-    }, []);
+    const imgRef = useRef(null);
 
     useEffect(() => {
         const map = mapRef.current;
@@ -75,6 +58,23 @@ export default function Gardens() {
         });
     }, []);
 
+    useEffect(() => {
+        const gsapElement = imgRef.current;
+
+        gsap.to(gsapElement, {
+            x: 0,
+            y: 0,
+            rotate: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: gsapElement,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 1,
+            },
+        });
+    }, []);
+
     return (
         <section ref={containerRef} className={styles.gardens}>
             <Scroll />
@@ -83,7 +83,7 @@ export default function Gardens() {
                 <div ref={textRef} className={styles.wrapper}>
 
                     <div className={styles.slider}>
-                        <div className={styles.sliderContainer}>
+                        <div className={styles.sliderContainer} ref={imgRef}>
                             <Swiper
                                 {...paramsSwiper}
                                 className={styles.swiper}

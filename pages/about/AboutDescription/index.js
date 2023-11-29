@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { gsap } from 'gsap';
 
 import styles from './AboutDescription.module.scss';
 
@@ -8,6 +9,9 @@ import aboutDescriptionFirst from "../../../public/img/about/background-2.webp";
 import aboutDescriptionSecond from "../../../public/img/about/background-3.webp";
 
 export default function AboutDescription() {
+
+    const imgRef = React.useRef(null);
+
     return (
         <section className={styles.aboutDescription}>
             <div className="container">
@@ -25,7 +29,8 @@ export default function AboutDescription() {
                                 Производственная мощность нашего предприятия составляла 1400 упаковок натурального сока в сутки. Сегодня наше предприятие перерабатывает более 5 тонн яблок в сутки.
                             </p>
                         </div>
-                        <div className={styles.aboutDescriptionImageContainer}>
+
+                        <div className={`${styles.aboutDescriptionImageContainer} ${styles.aboutDescriptionImageLeft}`}>
                             <Image src={aboutDescriptionFirst} fill={true} className={styles.aboutDescriptionImage}
                                 alt="Тургеневские сады - яблочный сок" />
                         </div>
@@ -48,7 +53,7 @@ export default function AboutDescription() {
                                 </Link>
                             </div> */}
                         </div>
-                        <div className={styles.aboutDescriptionImageContainer}>
+                        <div className={`${styles.aboutDescriptionImageContainer} ${styles.aboutDescriptionImageRight}`}>
                             <Image src={aboutDescriptionSecond} fill={true} className={styles.aboutDescriptionImage} alt="Залесский фермер Девочка с йогуртом" />
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export default function Gardens() {
 
     const containerRef = useRef(null);
     const textRef = useRef(null);
-    const mapRef = useRef(null);
+    const imgRef = useRef(null);
 
     useEffect(() => {
         const container = containerRef.current;
@@ -22,7 +22,7 @@ export default function Gardens() {
 
         gsap.to(text, {
             // yPercent: 15,
-            opacity: 1.6,
+            opacity: 2.2,
             // rotationY: 10,
             // rotationX: -10,
             ease: 'power1.out',
@@ -31,6 +31,23 @@ export default function Gardens() {
                 start: 'top bottom',
                 end: 'bottom top',
                 scrub: true,
+            },
+        });
+    }, []);
+
+    useEffect(() => {
+        const gsapElement = imgRef.current;
+
+        gsap.to(gsapElement, {
+            x: 0,
+            y: 0,
+            rotate: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: gsapElement,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 1,
             },
         });
     }, []);
@@ -69,7 +86,7 @@ export default function Gardens() {
                         </motion.div>
                     </div>
 
-                    <div className={styles.video} onClick={() => openVideoPopup('https://www.youtube.com/watch?v=Y-dcuIZVpxo')}>
+                    <div className={styles.video} onClick={() => openVideoPopup('https://www.youtube.com/watch?v=Y-dcuIZVpxo')} ref={imgRef}>
                         <div className={styles.videoContainer} />
                         <div className={styles.videoDecorativeElement} />
                         <div className={styles.videoButton}>
