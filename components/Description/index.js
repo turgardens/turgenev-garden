@@ -24,9 +24,9 @@ export default function Description({ title, subTitle, advantagesArray, imagesAr
 
                             <ul className={styles.aboutList}>
 
-                                {advantagesArray.map((item) => {
+                                {advantagesArray.map((item, index) => {
                                     return (
-                                        <li className={styles.aboutItem}>
+                                        <li key={index} className={styles.aboutItem}>
                                             {/* <div className={styles.aboutItemImg}></div> */}
                                             <Image src={item.img} className={styles.aboutItemImg} />
                                             <div className={styles.aboutItemContentContain}>

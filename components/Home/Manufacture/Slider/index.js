@@ -28,7 +28,7 @@ export default function Slider() {
             {currentProduct.fields.photos.map((item, index) => {
 
                 return (
-                    <SwiperSlide key={index + item.fields.file.url}>
+                    <SwiperSlide key={index}>
                         <div className="card-card-img-container">
                             <Image
                                 className="card-card__img"
