@@ -1,0 +1,376 @@
+/* Шрифты */
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/montserrat/Montserrat-Bold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/montserrat/Montserrat-SemiBold.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/montserrat/Montserrat-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Сomic CAT */
+@font-face {
+  font-family: "Gant";
+  src: url("../public/fonts/gant/Gant.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gant */
+@font-face {
+  font-family: "Comic-cat";
+  src: url("../public/fonts/comic-cat/Comic_CAT.otf") format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Шрифты */
+
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 360px;
+  background-image: url('../public/img/global/background.jpg');
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* Заголовки */
+
+.title {
+  margin: 0px;
+  padding: 0px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: Gant;
+  font-weight: 100;
+}
+
+.subTitle {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #888888;
+}
+
+/* Заголовки */
+/* Кнопки */
+
+.button {
+  display: inline-block;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: none;
+  color: #fff;
+  font-family: Comic-cat;
+  background-color: #6cb71d;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -52px;
+  width: 62px;
+  height: 100%;
+  background-image: url('../public/img/button/left-green.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  width: 62px;
+  height: 100%;
+  background-image: url('../public/img/button/right-green.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.redColor {
+  background-color: #e83028;
+}
+
+.redColor::after {
+  background-image: url('../public/img/button/left-red.svg');
+}
+
+.redColor::before {
+  background-image: url('../public/img/button/right-red.svg');
+}
+
+/* Кнопки */
+/* Текст */
+.text {
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 18px;
+  color: #323233;
+}
+
+/* Текст */
+
+.cls-1 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 1.07px;
+}
+
+.cls-2 {
+  fill: #669330;
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+.cls-4 {
+  fill: #2fa92c;
+}
+
+.cls-5 {
+  fill: #2b472b;
+}
+
+.cls-6 {
+  fill: #508020;
+}
+
+.cls-7 {
+  fill: #80bf80;
+}
+
+.cls-8 {
+  opacity: .22;
+}
+
+/* 404 */
+
+.notFound {
+  position: relative;
+  display: flex;
+  height: 60vh;
+  min-height: 1000px;
+
+  background: url("../public/img/404/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.notFound::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.notFound::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url("../public/img/footer/decorative.png");
+  height: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+}
+
+.notFoundTitle {
+  margin: 0px;
+  margin-bottom: 35px;
+  padding: 0px;
+  font-size: 100px;
+  font-family: Gant;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+.notFoundText {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+  line-height: 26px;
+
+  color: #fff;
+  z-index: 20;
+}
+
+
+.notFoundContent {
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+  line-height: 32px;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+@keyframes startAnimate {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* 404 */
+
+@media screen and (min-width: 0px) and (max-width: 1950px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1150px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1440px) {
+  .container {
+    margin: 0 auto;
+    max-width: 950px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .subTitle {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .button {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 42px;
+    margin-right: 42px;
+    font-size: 16px;
+  }
+
+  .button::after {
+    left: -42px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .subTitle {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,31 @@
+.block {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.block.right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.image {
+  max-width: 800px;
+  opacity: 0.6;
+}
+
+.textBlock {
+  max-width: 450px;
+}
+
+.title {
+  font-size: 42px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #999;
+}

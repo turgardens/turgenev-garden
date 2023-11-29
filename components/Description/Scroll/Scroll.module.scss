@@ -1,0 +1,76 @@
+.block {
+  width: 100%;
+  z-index: 50;
+  height: 0px;
+}
+
+.imageContainerLeft {
+  position: absolute;
+  top: 400px;
+  right: 10%;
+  display: inline-block;
+  width: fit-content;
+  z-index: 30;
+}
+
+.imageContainerRight {
+  position: absolute;
+  top: -50px;
+  right: 10%;
+  display: inline-block;
+  width: fit-content;
+  z-index: 30;
+}
+
+.imageContainerCenter {
+  position: absolute;
+  left: 5%;
+  display: inline-block;
+  width: fit-content;
+  z-index: 30;
+}
+
+.image {
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .imageContainerCenter {
+    left: 50px;
+    top: -75px;
+  }
+
+  .imageContainerCenter .image {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .imageContainerLeft {
+    top: -50px;
+    left: unset;
+    right: 20px;
+  }
+
+  .imageContainerRight {
+    display: none;
+  }
+
+  .imageContainerCenter {
+    top: 340px;
+    right: 80px;
+    left: unset;
+  }
+
+  .imageContainerLeft .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .imageContainerRight .image {
+    width: 75px;
+    height: 75px;
+  }
+}

@@ -1,0 +1,97 @@
+/* about */
+
+.about {
+  margin-top: 175px;
+  padding-bottom: 175px;
+}
+
+.wrapper {
+  opacity: 0;
+  margin: auto;
+  max-width: 820px;
+}
+
+.titleContainer {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 75px;
+  line-height: 60px;
+  font-family: Gant;
+  font-weight: 100;
+  color: #2a2d38;
+}
+
+.textContainer {
+  margin-bottom: 55px;
+}
+
+.text {
+  text-align: start;
+}
+
+.textRight {
+  margin-top: 30px;
+  text-align: right;
+
+  font-size: 45px;
+  line-height: 45px;
+
+  color: #777;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.buttonColor {
+  background: #e83028;
+}
+
+.buttonColor::after {
+  background: #d02a21;
+}
+
+.buttonColor::before {
+  background: #d02a21;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1250px) {
+  .title {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 875px) {
+  .about {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .textRight {
+    margin-top: 30px;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .wrapper {
+    position: relative;
+    top: -35px;
+  }
+}
+
+/* about */

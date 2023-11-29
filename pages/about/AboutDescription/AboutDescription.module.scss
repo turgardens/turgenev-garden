@@ -1,0 +1,190 @@
+.aboutDescription {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.aboutDescriptionTextContainer {
+  margin-bottom: 40px;
+}
+
+.aboutDescriptionTitle {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: Gant;
+}
+
+.aboutDescriptionBlock {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.aboutDescriptionBlock {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.aboutDescriptionBlockRight {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.aboutDescriptionContent,
+.aboutDescriptionImageContainer {
+  width: calc(50% - 20px);
+}
+
+.aboutDescriptionImageContainer {
+  position: relative;
+  width: 650px;
+  height: 650px;
+}
+
+.aboutDescriptionImage {
+  top: 0px;
+  left: 0px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.aboutDescriptionButtonContainer {
+  position: relative;
+  max-width: 300px;
+}
+
+.aboutDescriptionButton {
+  display: block;
+  opacity: 1;
+  padding: 9px;
+  padding-right: 55px;
+  border-radius: 30px;
+  border: 1px solid rgb(82, 109, 170);
+  background: rgb(82, 109, 170);
+  color: #fff;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+
+  -webkit-transition: 0.2s;
+
+  -o-transition: 0.2s;
+
+  transition: 0.2s;
+}
+
+.aboutDescriptionButton:hover {
+  background: rgb(62, 80, 120);
+}
+
+.aboutDescriptionButtonIcon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 47.5px;
+  height: 35px;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.aboutDescriptionButtonIcon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2.5px);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 30px;
+  height: 22px;
+  // background-image: url("../../images/about-page/button-arrowIcon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutDescriptionImageContainer {
+  position: relative;
+  width: 650px;
+  height: 650px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1950px) {
+  .aboutDescriptionImageContainer {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .aboutDescriptionImageContainer {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+  .aboutDescriptionImageContainer {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .aboutDescription {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .aboutDescriptionBlock {
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .aboutDescriptionContent,
+  .aboutDescriptionImageContainer {
+    width: 100%;
+  }
+
+  .aboutDescriptionBlock .aboutDescriptionImageContainer {
+    display: none;
+  }
+
+  .aboutDescriptionBlockRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .aboutDescriptionBlockRight .aboutDescriptionImageContainer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .aboutDescriptionImageContainer {
+    height: 260px;
+  }
+}

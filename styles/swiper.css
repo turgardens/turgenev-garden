@@ -1,0 +1,103 @@
+/* Услуги на главной */
+
+.swiper-arrow-prev,
+.swiper-arrow-next {
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.swiper-arrow-prev {
+    background-image: url("../public/img/gardens/arrow-right.svg");
+}
+
+.swiper-arrow-next {
+    background-image: url("../public/img/gardens/arrow-left.svg");
+}
+
+/* Услуги на главной */
+
+/* Отзывы */
+
+.swiper-reviews {
+    overflow: visible !important;
+}
+
+.swiper-reviews .swiper-slide-active {
+    transform: scale(1) !important;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.075);
+}
+
+.reviewsPagination {
+    margin-right: 15px;
+}
+
+/* Отзывы */
+
+/* Наша ферма */
+
+.excursions-gallery__arrow-prev,
+.excursions-gallery__arrow-next {
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.excursions-gallery__arrow-prev {
+    margin-right: 20px;
+    background-image: url("../public/img/ourFarm/arrow-right.svg");
+}
+
+.excursions-gallery__arrow-next {
+    background-image: url("../public/img/ourFarm/arrow-left.svg");
+}
+
+.excursions-gallery__arrow-prev.red {
+    background-image: url("../public/img/ourFarm/arrow-right-red.svg");
+}
+
+.excursions-gallery__arrow-next.red {
+    background-image: url("../public/img/ourFarm/arrow-left-red.svg");
+}
+
+/* Наша ферма */
+
+.our-farm img {
+    transform: scale(1);
+
+    transition: 0.2s;
+}
+
+.our-farm .swiper-slide-active .slider-image {
+    transform: scale(1.1) !important;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+}
+
+/* Наша ферма */
+
+@media screen and (min-width: 0px) and (max-width: 860px) {
+    .autoplay-progress {
+        bottom: 35px;
+    }
+
+    .our-farm .swiper-slide-active .slider-image {
+        transform: scale(1) !important;
+        box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+    }
+
+    .our-farm .swiper-slide-active img {
+        transform: scale(1) !important;
+    }
+}

@@ -1,0 +1,116 @@
+/* main-page */
+
+.contactsMain {
+  position: relative;
+  height: 100vh;
+  min-height: 1000px;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background: url("../../../public/img/about/background.webp");
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.contactsMain::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url("../../../public/img/footer/decorative.png");
+  height: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+}
+
+.contactsMain::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contactsMainContent {
+  position: absolute;
+  left: 50%;
+  max-width: 700px;
+  text-align: center;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-50px) translateX(-50%);
+  -ms-transform: translateY(-50px) translateX(-50%);
+  transform: translateY(-50px) translateX(-50%);
+}
+
+.contactsMainTitle {
+  margin: 0px;
+  font-size: 100px;
+  line-height: 80px;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  font-family: Gant;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+@keyframes startAnimate {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1250px) {
+  .contactsMain {
+    min-height: 800px;
+  }
+
+  .contactsMain::after {
+    height: 100px;
+  }
+
+  .contactsMainTitle {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .contactsMain {
+    min-height: 600px;
+  }
+
+  .contactsMainContent {
+    width: 90%;
+    transform: translateY(-50px) translateX(-50%);
+  }
+
+  .contactsMainTitle {
+    font-size: 64px;
+    line-height: 58px;
+  }
+}
+
+/* main-page */

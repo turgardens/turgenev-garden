@@ -1,0 +1,249 @@
+.excursionsGallery {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.titleContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.excursionArrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.excursionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: Gant;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 550px;
+  font-weight: 300;
+}
+
+.excursionsGalleryTitleContainer {
+  text-align: center;
+}
+
+.excursionsGallery__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 75px;
+  line-height: 60px;
+  font-family: Corinthia;
+  font-weight: 100;
+  text-align: center;
+}
+
+.excursionsGallerySlider .swiperContainer {
+  overflow: visible;
+}
+
+.excursionsGallerySlider .swiperSlide {
+  position: relative;
+  height: 400px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.excursionsGallerySlider .swiperSlide::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -1px;
+  width: 101%;
+  height: 80px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.excursionsGallerySliderImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.excursionsGalleryArrowNext,
+.excursionsGalleryArrowPrev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  //   background-image: url("../../images/excursions/arrow-icon.svg");
+  background-position: center;
+  z-index: 1000;
+  cursor: pointer;
+
+  -webkit-transition: 0.2s;
+
+  -o-transition: 0.2s;
+
+  transition: 0.2s;
+}
+
+.excursionsGalleryArrowNext:hover,
+.excursionsGalleryArrowPrev:hover {
+  opacity: 0.8;
+}
+
+.excursionsGalleryArrowPrev {
+  left: 25%;
+}
+
+.excursionsGalleryArrowNext {
+  right: 25%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.swiper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sliderVideo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
+}
+
+// .sliderBackgroundFirst {
+//   background-image: url("../../public/img/ourFarm/video-1.jpg");
+// }
+
+.sliderVideoIcon {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 65px;
+  height: 65px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sliderVideoIcon:hover {
+  opacity: 0.6;
+}
+
+.icon {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+
+.sliderVideo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .excursionsGallery {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+
+  .excursionsGalleryArrowNext {
+    right: 5%;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .excursionsGalleryArrowPrev {
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .excursionArrows {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .excursionsGallery {
+    padding-top: 50px;
+    padding-bottom: 140px;
+  }
+
+  .titleContainer {
+    margin-bottom: 0px;
+  }
+
+  .swiper {
+    padding-bottom: 0px;
+    padding-top: 15px;
+  }
+
+  .excursionsGallerySlider .swiperSlide {
+    height: 320px;
+  }
+
+  .excursionsGallerySlider .swiperSlide-active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}

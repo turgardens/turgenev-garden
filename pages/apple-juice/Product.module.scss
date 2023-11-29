@@ -1,0 +1,685 @@
+.cardProduct {
+  position: relative;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+
+.cardProductDecorationFirst {
+  position: absolute;
+  top: 150px;
+  right: 35px;
+  width: 450px;
+  height: 450px;
+
+  //   background-image: url("../../images/card-product/decoration-4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.cardProductDecorationSecond {
+  position: absolute;
+  bottom: 150px;
+  right: 125px;
+  width: 200px;
+  height: 200px;
+
+  //   background-image: url("../../images/card-product/decoration-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.cardProductDecorationThird {
+  position: absolute;
+  top: 175px;
+  left: 0px;
+  width: 250px;
+  height: 250px;
+
+  //   background-image: url("../../images/card-product/decoration-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.cardProduct::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(1, -1);
+  -ms-transform: translateX(-50%) scale(1, -1);
+  transform: translateX(-50%) scale(1, -1);
+  //   background-image: url("../../images/card-product/transparent-pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  z-index: 5;
+}
+
+.cardProductMainTitleContainer {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.cardProductTitle {
+  color: #fff;
+  font-weight: 500;
+}
+
+.cardProductMainTitle {
+  margin-bottom: 40px;
+  max-width: 700px;
+  font-size: 62px;
+  line-height: 70px;
+  font-family: Gant;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgb(0 0 0 / 15%);
+  animation-delay: 0.1s;
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cardProductMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cardProductSwiperWrapper {
+  position: relative;
+}
+
+.cardProductSwiperWrapper {
+  width: calc(60% - 40px);
+}
+
+.cardProductDescription {
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cardProductText {
+  color: #fff;
+}
+
+.cardProductDescriptionTitle {
+  margin: 0;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: Geslab, sans-serif;
+  font-size: 18px;
+}
+
+.cardProductDescriptionText {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.cardProductWeightContainer {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardProductSuitability {
+  color: #fff;
+  font-size: 18px;
+}
+
+.cardProductCharacteristics {
+  margin-bottom: 40px;
+}
+
+.cardProductCharacteristicsList {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardProductCharacteristicsItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+  list-style: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.cardProductCharacteristicsItem::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  opacity: 0.3;
+}
+
+.cardProductCharacteristicsItem::after {
+  content: "";
+  position: absolute;
+  background: rgb(108, 183, 29);
+}
+
+.cardProductCharacteristicsItemName {
+  padding: 2px;
+  font-size: 18px;
+}
+
+.cardProductCharacteristicsItemValue {
+  font-size: 18px;
+}
+
+.cardProduct .swiperSlide {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column-reverse;
+  /* min-height: 350px; */
+  text-align: center;
+}
+
+@keyframes showProduct {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.cardProduct .swiperContainer {
+  position: relative;
+}
+
+.cardProduct .cardProductSwiperWrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 330px;
+  //   background: url("../../images/card-product/decoration-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 0;
+}
+
+.cardProduct .swiperSlideImg {
+  max-height: 400px;
+  width: auto;
+}
+
+@keyframes soaring {
+  from {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.cardProductMain {
+  padding-top: 175px;
+  align-items: center;
+}
+
+.cardProduct__arrow-next,
+.cardProduct__arrow-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+
+  //   background-image: url("../../images/card-product/card-product-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.cardProduct__arrow-next {
+  left: 0;
+}
+
+.cardProduct__arrow-prev {
+  right: 0;
+  transform: translateY(-50%) scale(-1);
+}
+
+.cardProductWeight-number,
+.cardProductWeightText {
+  font-size: 55px;
+  font-family: Corinthia;
+}
+
+.cardProductAdvantages {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cardProductSheetFirst {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  width: 150px;
+  height: 75px;
+  //   background-image: url("../../images/card-product/sheet-decoration-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductSheetSecond {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+  width: 250px;
+  height: 250px;
+  //   background-image: url("../../images/card-product/sheet-decoration-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductSheetThird {
+  position: absolute;
+  left: 40px;
+  top: 450px;
+  width: 140px;
+  height: 140px;
+  //   background-image: url("../../images/card-product/sheet-decoration-4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductSheet-fourth {
+  position: absolute;
+  left: 420px;
+  top: 250px;
+  width: 50px;
+  height: 50px;
+  //   background-image: url("../../images/card-product/sheet-decoration-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductSheet-five {
+  position: absolute;
+  right: 180px;
+  top: 300px;
+  width: 30px;
+  height: 30px;
+  //   background-image: url("../../images/card-product/sheet-decoration-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductSheet-six {
+  position: absolute;
+  right: 40px;
+  top: 450px;
+  width: 140px;
+  height: 140px;
+  //   background-image: url("../../images/card-product/sheet-decoration-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cardProductAdvantages-image {
+  position: relative;
+  max-height: 375px;
+  width: auto;
+  max-width: 320px;
+  height: auto;
+  text-align: center;
+}
+
+.cardProductAdvantagesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardProductAdvantagesItemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardProductAdvantagesItemContainerLeft {
+  text-align: right;
+}
+
+.cardProductAdvantagesItem {
+  position: relative;
+  width: 260px;
+}
+
+.cardProductAdvantagesItem .cardProductAdvantagesItemLine {
+  position: absolute;
+  height: 1px;
+  background: #888;
+}
+
+.cardProductAdvantagesItemFirst .cardProductAdvantagesItemLine {
+  transform: translateY(-50%) rotate(10deg);
+  margin-left: 10px;
+  top: 50%;
+  right: -100px;
+  width: 90px;
+}
+
+.cardProductAdvantagesItemSecond .cardProductAdvantagesItemLine {
+  transform: translateY(-50%) rotate(-deg);
+  margin-left: 10px;
+  top: 50%;
+  right: -100px;
+  width: 90px;
+}
+
+.cardProductAdvantagesItemThird .cardProductAdvantagesItemLine {
+  transform: translateY(-50%) rotate(-10deg);
+  margin-right: 10px;
+  top: 50%;
+  left: -100px;
+  width: 90px;
+}
+
+.cardProductAdvantagesItemFourth .cardProductAdvantagesItemLine {
+  position: relative;
+  transform: translateY(-50%) rotate(5deg);
+  margin-right: 10px;
+  top: 50%;
+  left: -100px;
+  width: 90px;
+}
+
+.cardProductAdvantagesItem
+  .cardProductAdvantagesItemLine
+  .cardProductAdvantagesItemPoint {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.cardProductAdvantagesItem
+  .cardProductAdvantagesItemLine
+  .cardProductAdvantagesItemPoint {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.cardProductAdvantagesItem
+  .cardProductAdvantagesItemLine
+  .cardProductAdvantagesItemPoint::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 27px;
+  height: 27px;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+
+.cardProductAdvantagesItemContainerLeft
+  .cardProductAdvantagesItem
+  .cardProductAdvantagesItemLine
+  .cardProductAdvantagesItemPoint {
+  right: 0;
+  left: unset;
+}
+
+.cardProductAdvantagesImageContainer {
+  display: flex;
+}
+
+.cardProductAdvantagesItemTitle {
+  font-family: Corinthia;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cardProductAdvantagesItemText {
+  color: #888;
+}
+
+.swiperImageContainer {
+  width: 650px;
+  height: 650px;
+}
+
+.swiperImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1300px) {
+  .cardProductAdvantagesItem-First .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItem-Second .cardProductAdvantagesItemLine {
+    right: -60px;
+    width: 50px;
+  }
+
+  .cardProductAdvantagesItem-Third .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItemFourth .cardProductAdvantagesItemLine {
+    left: -60px;
+    width: 50px;
+  }
+
+  .cardProductAdvantages-image {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .cardProduct::after {
+    height: 100px;
+  }
+
+  .cardProduct {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .swiperSlideImg {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+  .cardProductAdvantagesItem-First .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItem-Second .cardProductAdvantagesItemLine {
+    right: -50px;
+    width: 40px;
+  }
+
+  .cardProductAdvantagesItem-Third .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItemFourth .cardProductAdvantagesItemLine {
+    left: -50px;
+    width: 40px;
+  }
+
+  .cardProductAdvantages-image {
+    max-width: 240px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .cardProductAdvantagesList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardProductAdvantagesItem-First .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItem-Second .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItem-Third .cardProductAdvantagesItemLine,
+  .cardProductAdvantagesItemFourth .cardProductAdvantagesItemLine {
+    display: none;
+  }
+
+  .cardProductAdvantagesItem {
+    position: relative;
+    width: auto;
+    text-align: center;
+  }
+
+  .cardProductAdvantagesImageContainer {
+    flex-direction: column;
+  }
+
+  .cardProduct .swiperContainer::after {
+    width: 100%;
+  }
+
+  .cardProduct .swiperSlideImg {
+    bottom: 50px;
+    max-height: 250px;
+  }
+
+  .cardProductSheetFourth {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .cardProduct {
+    height: auto;
+    max-height: unset;
+  }
+
+  .cardProductMainTitleContainer {
+    padding-top: 100px;
+  }
+
+  .cardProductSheetSix {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardProductSheetThird {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardProductMainTitle {
+    margin: auto;
+    max-width: 700px;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .cardProduct .swiperContainer::after {
+    bottom: -100px;
+  }
+
+  .cardProduct .swiperSlideImg {
+    bottom: 50px;
+    max-height: 310px;
+  }
+
+  .cardProductMain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .cardProductSwiperWrapper {
+  //   margin-bottom: 50px;
+  // }
+
+  .cardProductSwiperWrapper,
+  .cardProductDescription {
+    width: 100%;
+  }
+
+  .cardProductDescription {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .cardProduct .swiperContainer::after {
+    bottom: -120px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 340px) {
+  .cardProduct .swiperContainer::after {
+    bottom: -125px;
+  }
+}

@@ -1,0 +1,285 @@
+.gardens {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+
+.wrapper {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderContainer {
+  width: 550px;
+  height: 550px;
+}
+
+.sliderContainer {
+  position: relative;
+  margin-bottom: 75px;
+  min-width: 650px;
+  min-height: 650px;
+  transform: rotate(-2deg);
+  background: #f3e6bc;
+  z-index: 1;
+}
+
+.sliderContainer::after {
+  content: "";
+  position: absolute;
+  background: #f3e6bc;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(5deg);
+  z-index: -5;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonArrowContainer {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+}
+
+.left {
+  left: 25px;
+}
+
+.right {
+  right: 25px;
+}
+
+.left,
+.right {
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.swiperArrowsContainer {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 50;
+}
+
+.cardImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: 10;
+}
+
+.content {
+  max-width: 350px;
+}
+
+.textContainer {
+  position: relative;
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+.map {
+  padding-top: 200px;
+  margin-top: -200px;
+
+  width: 1200px;
+  height: 600px;
+
+  transition: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.pinMap {
+  fill: #669330;
+  opacity: 0;
+
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+
+.pinGarden {
+  fill: #80bf80;
+
+  transition-delay: 0s;
+  transition-duration: 1s;
+}
+
+.pinGardenName {
+  opacity: 0;
+
+  transition-delay: 0.5s;
+  transition-duration: 1s;
+}
+
+.pinDot,
+.pinLine {
+  opacity: 0;
+
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+
+.pinText {
+  opacity: 0;
+
+  transition-delay: 1.5s;
+  transition-duration: 1s;
+}
+
+.active .map {
+  transform: scale(1.1);
+}
+
+.active .pinMap {
+  fill: #669330;
+  opacity: 1;
+}
+
+.active .pinDot,
+.active .pinLine {
+  fill: #fff;
+  opacity: 1;
+}
+
+.active .pinGarden {
+  fill: #2fa92c;
+}
+
+.active .pinGardenName {
+  opacity: 1;
+}
+
+.active .pinText {
+  fill: #2b472b;
+  opacity: 1;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .textContainer {
+    width: 350px;
+  }
+
+  .sliderContainer {
+    width: 500px;
+    height: 500px;
+    min-width: 450px;
+    min-height: 450px;
+  }
+
+  .map {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+  .textContainer {
+    width: 350px;
+  }
+
+  .content {
+    max-width: 350px;
+  }
+
+  .sliderContainer {
+    width: 375px;
+    height: 375px;
+    min-width: 375px;
+    min-height: 375px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .slider {
+    margin-bottom: 65px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .textContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .gardens {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sliderContainer {
+    width: 100%;
+    height: 320px;
+    min-width: 100%;
+    min-height: 320px;
+  }
+
+  .sliderContainer {
+    margin-bottom: 45px;
+  }
+
+  .left,
+  .right {
+    width: 40px;
+    height: 40px;
+  }
+
+  .textContainer {
+    margin-bottom: 30px;
+  }
+
+  .map {
+    padding-top: 50px;
+    margin-top: -50px;
+
+    transform: translateX(-100px) translateY(50px) scale(1);
+    width: 600px;
+    height: 400px;
+  }
+
+  .active .map {
+    transform: translateX(-100px) translateY(50px) scale(1.3);
+  }
+}
