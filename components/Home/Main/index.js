@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { usePopup } from '../../PopupContext';
 
 import juice from '@/public/img/main/apple-juice.webp';
+import ScrollNine from '@/components/ScrollNine';
 
 export default function Main() {
     const { openVideoPopup } = usePopup();
@@ -16,9 +17,10 @@ export default function Main() {
             <section className={styles.main}>
                 <div className={`${styles.mainContainer} container`}>
                     <div className={styles.mainWrapper}>
-                        <div className={styles.mainImageContainer}>
+                        <ScrollNine />
+                        {/* <div className={styles.mainImageContainer}>
                             <Image className={styles.mainImage} src={juice} fill={true}></Image>
-                        </div>
+                        </div> */}
 
                         <div className={styles.mainTextContainer}>
                             <h1 className={styles.title}>Натуральный яблочный сок</h1>
