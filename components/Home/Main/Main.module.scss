@@ -248,6 +248,14 @@
   object-position: center;
 }
 
+.threeObjectContainer {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  width: 900px;
+  height: 900px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1950px) {
   .mainTextContainer {
     max-width: 575px;

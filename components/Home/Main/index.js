@@ -6,8 +6,8 @@ import styles from "./Main.module.scss";
 import { motion } from 'framer-motion';
 import { usePopup } from '../../PopupContext';
 
-import juice from '@/public/img/main/apple-juice.webp';
-import ScrollNine from '@/components/ScrollNine';
+// import juice from '@/public/img/main/apple-juice.webp';
+import ThreeObject from '../../../components/ThreeObject';
 
 export default function Main() {
     const { openVideoPopup } = usePopup();
@@ -17,7 +17,9 @@ export default function Main() {
             <section className={styles.main}>
                 <div className={`${styles.mainContainer} container`}>
                     <div className={styles.mainWrapper}>
-                        <ScrollNine />
+                        <div className={styles.threeObjectContainer}>
+                            <ThreeObject />
+                        </div>
                         {/* <div className={styles.mainImageContainer}>
                             <Image className={styles.mainImage} src={juice} fill={true}></Image>
                         </div> */}

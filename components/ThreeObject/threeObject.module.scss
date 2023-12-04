@@ -1,0 +1,26 @@
+.containerObject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-250%) translateY(-60%) rotate(15deg);
+  min-height: 100%;
+  min-width: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+
+  transition: 2.5s;
+}
+
+.containerObject.active {
+  transform: translateX(-50%) translateY(-40%) rotate(5deg);
+}
+
+// @keyframes startAnimate {
+//   from {
+//     transform: translateX(-250%) translateY(-60%) rotate(15deg);
+//   }
+
+//   to {
+//     transform: translateX(-50%) translateY(-40%) rotate(5deg);
+//   }
+// }
