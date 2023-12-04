@@ -15,8 +15,6 @@ const ThreeObject = () => {
     const juiceRef = useRef();
     const cameraRef = useRef();
 
-    console.log(isLoaded);
-
     useEffect(() => {
         const container = containerRef.current;
         const scene = new THREE.Scene();
@@ -104,7 +102,31 @@ const ThreeObject = () => {
 
         animate();
 
+        const cleanup = () => {
+            // Очистить сцену
+            scene.traverse((object) => {
+                if (object instanceof THREE.Mesh) {
+                    // Освободить ресурсы, связанные с каждым Mesh
+                    object.geometry.dispose();
+                    object.material.dispose();
+                }
+            });
+
+            // Удалить все объекты из сцены
+            while (scene.children.length > 0) {
+                scene.remove(scene.children[0]);
+            }
+
+            // Установить текущую камеру в null
+            cameraRef.current = null;
+
+            // Освободить ресурсы, связанные с WebGLRenderer
+            renderer.dispose();
+        };
+
+
         return () => {
+            cleanup();
             container.removeChild(renderer.domElement);
         };
     }, []);
