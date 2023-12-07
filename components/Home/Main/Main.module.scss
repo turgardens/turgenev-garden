@@ -1,4 +1,5 @@
 .main {
+  opacity: 0;
   position: relative;
   margin: auto;
   max-width: 100%;
@@ -9,6 +10,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  transition: 0.4;
+}
+
+.main.active {
+  opacity: 1;
 }
 
 .main::before {
@@ -88,40 +95,6 @@
   flex-direction: column;
   z-index: 50;
 }
-
-// .massengerItem {
-//   position: relative;
-//   margin-bottom: 20px;
-//   width: 45px;
-//   height: 45px;
-//   border-radius: 50%;
-//   background-image: url("../../public/img/icons/telegram.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-
-//   animation-name: startAnimate;
-//   animation-fill-mode: both;
-
-//   transition: 0.2s;
-// }
-
-// .massengerItem.telegram {
-//   background-image: url("../../public/img/icons/telegram.svg");
-//   animation-duration: 0.6s;
-//   animation-delay: 0.4s;
-// }
-
-// .massengerItem.whatsapp {
-//   background-image: url("../../public/img/icons/whatsapp.svg");
-//   animation-duration: 0.6s;
-//   animation-delay: 0.6s;
-// }
-
-// .massengerItem.viber {
-//   background-image: url("../../public/img/icons/viber.svg");
-//   animation-duration: 0.6s;
-//   animation-delay: 0.8s;
-// }
 
 @keyframes startAnimate {
   from {
@@ -248,13 +221,13 @@
   object-position: center;
 }
 
-.threeObjectContainer {
-  position: absolute;
-  bottom: -25px;
-  left: -300px;
-  width: 900px;
-  height: 900px;
-}
+// .threeObjectContainer {
+//   position: absolute;
+//   bottom: -25px;
+//   left: -300px;
+//   width: 900px;
+//   height: 900px;
+// }
 
 @media screen and (min-width: 0px) and (max-width: 1950px) {
   .mainTextContainer {
@@ -270,13 +243,13 @@
     font-size: 26px;
   }
 
-  .threeObjectContainer {
-    position: absolute;
-    bottom: -25px;
-    left: -200px;
-    width: 700px;
-    height: 700px;
-  }
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   bottom: -25px;
+  //   left: -200px;
+  //   width: 700px;
+  //   height: 700px;
+  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 1450px) {
@@ -330,13 +303,13 @@
     margin-bottom: 30px;
   }
 
-  .threeObjectContainer {
-    position: absolute;
-    left: -150px;
-    bottom: -25px;
-    width: 600px;
-    height: 600px;
-  }
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -150px;
+  //   bottom: -25px;
+  //   width: 600px;
+  //   height: 600px;
+  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 930px) {
@@ -390,13 +363,13 @@
     font-size: 16px;
   }
 
-  .threeObjectContainer {
-    position: absolute;
-    left: -100px;
-    bottom: 50px;
-    width: 450px;
-    height: 450px;
-  }
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -100px;
+  //   bottom: 50px;
+  //   width: 450px;
+  //   height: 450px;
+  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
@@ -440,13 +413,13 @@
     flex-direction: row;
   }
 
-  .threeObjectContainer {
-    position: absolute;
-    left: -50px;
-    bottom: 50px;
-    width: 450px;
-    height: 450px;
-  }
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -50px;
+  //   bottom: 50px;
+  //   width: 450px;
+  //   height: 450px;
+  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 550px) {
@@ -484,12 +457,12 @@
     display: none;
   }
 
-  .threeObjectContainer {
-    left: 0px;
-    bottom: -40px;
-    width: 420px;
-    height: 420px;
-  }
+  // .threeObjectContainer {
+  //   left: 0px;
+  //   bottom: -40px;
+  //   width: 420px;
+  //   height: 420px;
+  // }
 
   .mainImageContainer {
     left: 40px;
@@ -497,13 +470,13 @@
     width: 420px;
   }
 
-  .threeObjectContainer {
-    position: absolute;
-    left: -10%;
-    bottom: 20px;
-    width: 400px;
-    height: 400px;
-  }
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -10%;
+  //   bottom: 20px;
+  //   width: 400px;
+  //   height: 400px;
+  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 450px) {

@@ -6,23 +6,26 @@ import styles from "./Main.module.scss";
 import { motion } from 'framer-motion';
 import { usePopup } from '../../PopupContext';
 
-// import juice from '@/public/img/main/apple-juice.webp';
-import ThreeObject from '../../../components/ThreeObject';
+import juice from '@/public/img/main/apple-juice.webp';
+// import ThreeObject from '../../../components/ThreeObject';
 
 export default function Main() {
     const { openVideoPopup } = usePopup();
+    const [isLoading, setIsLoading] = React.useState();
 
     return (
         <>
-            <section className={styles.main}>
+            <section className={isLoading ? `${styles.main}` : `${styles.main} ${styles.active}`}>
                 <div className={`${styles.mainContainer} container`}>
                     <div className={styles.mainWrapper}>
-                        <div className={styles.threeObjectContainer}>
+
+                        {/* <div className={styles.threeObjectContainer}>
                             <ThreeObject />
-                        </div>
-                        {/* <div className={styles.mainImageContainer}>
-                            <Image className={styles.mainImage} src={juice} fill={true}></Image>
                         </div> */}
+
+                        <div className={styles.mainImageContainer}>
+                            <Image className={styles.mainImage} isLoading={() => setIsLoading(true)} src={juice} fill={true}></Image>
+                        </div>
 
                         <div className={styles.mainTextContainer}>
                             <h1 className={styles.title}>Натуральный яблочный сок</h1>

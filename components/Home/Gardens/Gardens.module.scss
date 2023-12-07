@@ -27,8 +27,9 @@
   margin-bottom: 75px;
   min-width: 650px;
   min-height: 650px;
-  transform: rotate(-7deg) translateX(-250px) translateY(-5px)
-    translate3d(0, 0, 0);
+  // transform: rotate(-7deg) translateX(-250px) translateY(-5px)
+  //   translate3d(0, 0, 0);
+  transform: rotate(-3deg) translateX(0px) translateY(0px) translate3d(0, 0, 0);
   background: #f3e6bc;
   z-index: 1;
 }

@@ -35,22 +35,22 @@ export default function Gardens() {
         });
     }, []);
 
-    useEffect(() => {
-        const gsapElement = imgRef.current;
+    // useEffect(() => {
+    //     const gsapElement = imgRef.current;
 
-        gsap.to(gsapElement, {
-            x: 0,
-            y: 0,
-            rotate: 0,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: gsapElement,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: 1,
-            },
-        });
-    }, []);
+    //     gsap.to(gsapElement, {
+    //         x: 0,
+    //         y: 0,
+    //         rotate: 0,
+    //         opacity: 1,
+    //         scrollTrigger: {
+    //             trigger: gsapElement,
+    //             start: 'top bottom',
+    //             end: 'bottom top',
+    //             scrub: 1,
+    //         },
+    //     });
+    // }, []);
 
     return (
         <section className={styles.manufacture}>

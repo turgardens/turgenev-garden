@@ -14,8 +14,9 @@
 
 .video {
   position: relative;
-  transform: rotate(7deg) translateX(250px) translateY(-25px)
-    translate3d(0, 0, 0);
+  transform: rotate(3deg) translateX(0px) translateY(0px) translate3d(0, 0, 0);
+  // transform: rotate(7deg) translateX(250px) translateY(-25px)
+  //   translate3d(0, 0, 0);
   cursor: pointer;
 }
 
