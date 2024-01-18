@@ -202,10 +202,10 @@
 
 .mainImageContainer {
   position: absolute;
-  bottom: -160px;
-  left: -150px;
-  width: 1050px;
-  height: 1050px;
+  bottom: -60px;
+  left: -250px;
+  width: 900px;
+  height: 900px;
   z-index: 10;
 
   animation-name: startAnimate;
@@ -243,13 +243,14 @@
     font-size: 26px;
   }
 
-  // .threeObjectContainer {
-  //   position: absolute;
-  //   bottom: -25px;
-  //   left: -200px;
-  //   width: 700px;
-  //   height: 700px;
-  // }
+  .mainImageContainer {
+    position: absolute;
+    bottom: -20px;
+    left: -120px;
+    width: 720px;
+    height: 720px;
+    z-index: 10;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 1450px) {
@@ -260,14 +261,14 @@
     min-height: 500px;
   }
 
-  // .mainImageContainer {
-  //   position: absolute;
-  //   bottom: -60px;
-  //   left: 0px;
-  //   width: 650px;
-  //   height: 650px;
-  //   z-index: 10;
-  // }
+  .mainImageContainer {
+    position: absolute;
+    bottom: -20px;
+    left: -80px;
+    width: 520px;
+    height: 520px;
+    z-index: 10;
+  }
 
   .mainTextContainer {
     position: relative;
@@ -302,14 +303,6 @@
   .mainTextContainer p {
     margin-bottom: 30px;
   }
-
-  // .threeObjectContainer {
-  //   position: absolute;
-  //   left: -150px;
-  //   bottom: -25px;
-  //   width: 600px;
-  //   height: 600px;
-  // }
 }
 
 @media screen and (min-width: 0px) and (max-width: 930px) {
@@ -325,9 +318,9 @@
 
   .mainImageContainer {
     left: 0px;
-    bottom: -40px;
-    height: 520px;
-    width: 520px;
+    bottom: 0px;
+    height: 420px;
+    width: 420px;
   }
 
   .mainTextContainer .title {
@@ -381,9 +374,9 @@
 
   .mainImageContainer {
     left: 20px;
-    bottom: -40px;
-    height: 450px;
-    width: 450px;
+    bottom: 0px;
+    height: 400px;
+    width: 400px;
   }
 
   .mainTextContainer .title {
@@ -465,9 +458,10 @@
   // }
 
   .mainImageContainer {
-    left: 40px;
-    height: 420px;
-    width: 420px;
+    left: 0px;
+    bottom: 20px;
+    height: 340px;
+    width: 320px;
   }
 
   // .threeObjectContainer {

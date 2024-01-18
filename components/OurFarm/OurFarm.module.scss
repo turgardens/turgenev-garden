@@ -65,13 +65,7 @@
 .excursionsGallerySlider .swiperSlide {
   position: relative;
   height: 400px;
-  background: #f8f8f8;
-  border-radius: 10px;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
@@ -83,16 +77,14 @@
   width: 101%;
   height: 80px;
 
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .excursionsGallerySliderImg {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
+  object-fit: contain;
   object-position: center;
   border-radius: 10px;
   overflow: hidden;
@@ -102,8 +94,6 @@
 .excursionsGalleryArrowPrev {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -111,10 +101,6 @@
   background-position: center;
   z-index: 1000;
   cursor: pointer;
-
-  -webkit-transition: 0.2s;
-
-  -o-transition: 0.2s;
 
   transition: 0.2s;
 }
@@ -130,8 +116,6 @@
 
 .excursionsGalleryArrowNext {
   right: 25%;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  -ms-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
 
@@ -145,7 +129,7 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.2s;
@@ -164,9 +148,7 @@
   transform: translateX(-50%) translateY(-50%);
   width: 65px;
   height: 65px;
-  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
   background: #fff;
-  border-radius: 50%;
   border: none;
   transition: 0.5s;
   cursor: pointer;
@@ -206,8 +188,6 @@
 
   .excursionsGalleryArrowNext {
     right: 5%;
-    -webkit-transform: translateY(-50%) rotate(180deg);
-    -ms-transform: translateY(-50%) rotate(180deg);
     transform: translateY(-50%) rotate(180deg);
   }
 
@@ -242,8 +222,6 @@
   }
 
   .excursionsGallerySlider .swiperSlide-active {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
 }

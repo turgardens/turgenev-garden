@@ -1,34 +1,13 @@
 import React from "react";
 import Head from "next/head";
-// import "./card-product.css";
-// import { useLocation } from "react-router-dom";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import ThreeObject from "@/components/ThreeObject";
 import AdvantagesProduct from './Advantages';
-import Image from "next/image";
-// import ScrollToTop from "../../include/ScrollToTop.js";
+import Scroll from './Scroll';
 
 import styles from './Product.module.scss';
 
-import juiceImg from '../../public/img/apple-juice/background.webp';
-
-export default function CardProduct(props) {
-
-    // ScrollToTop();
-
-    // const currentUrl = useLocation().pathname.split("/");
-    // const endCurrentUrl =
-    //     useLocation().pathname.split("/")[currentUrl.length - 1];
-
-    // let currentProduct = "";
-
-    // props.items.forEach((element) => {
-    //     if (element.fields.url === endCurrentUrl) {
-    //         currentProduct = element;
-    //     }
-    // });
-
-    const swiperContainer = React.useRef();
+export default function CardProduct() {
 
     return (
         <>
@@ -42,61 +21,17 @@ export default function CardProduct(props) {
                     className={styles.cardProduct}
                     style={{ background: '#6cb71d' }}
                 >
-                    <div className="card-product__decoration-first"></div>
-                    <div className="card-product__decoration-second"></div>
-                    <div className="card-product__decoration-third"></div>
+
+                    {/* <Scroll /> */}
 
                     <div className="container">
 
                         <div className={styles.cardProductMain}>
-                            <div className={styles.cardProductSwiperWrapper}>
-                                <Swiper
-                                    className={styles.cardProductSwiper}
-                                    ref={swiperContainer}
-                                    loop={true}
-                                    speed={500}
-                                    spaceBetween={0}
-                                    slidesPerView={1}
-                                    effect={"flip"}
+                            <div className={styles.cardProductWrapper}>
 
-                                    navigation={{
-                                        nextEl: ".card-product__arrow-next",
-                                        prevEl: ".card-product__arrow-prev",
-                                    }}
-                                >
-                                    <SwiperSlide className="swiper-slide">
-                                        <div className={styles.swiperImageContainer}>
-                                            <Image
-                                                className={styles.swiperImage}
-                                                src={juiceImg}
-                                                fill={true}
-                                                alt='Тургеневские сады - яблочный сок из Калининградской области'
-                                            ></Image>
-                                        </div>
-                                    </SwiperSlide>
-
-                                    {/* {currentProduct.fields.photos.map((currentImage, index) => {
-                                        return (
-                                            <SwiperSlide className="swiper-slide">
-                                                <img
-                                                    className="swiper-slide__img"
-                                                    width="400px"
-                                                    height="400px"
-                                                    src={`https://${currentImage.fields.file.url}`}
-                                                    alt={currentProduct.fields.name}
-                                                ></img>
-                                            </SwiperSlide>
-                                        )
-                                    })} */}
-
-                                    {/* {currentProduct.fields.photos.length > 1 && (
-                                        <div className="card-product__arrows-container">
-                                            <div className="card-product__arrow-prev"></div>
-                                            <div className="card-product__arrow-next"></div>
-                                        </div>
-                                    )} */}
-
-                                </Swiper>
+                                <div className={styles.threeObjectContainer}>
+                                    <ThreeObject maxRotate={true} />
+                                </div>
                             </div>
 
                             <div className={styles.cardProductDescription}>
@@ -104,33 +39,47 @@ export default function CardProduct(props) {
                                     Яблочный сок
                                 </h1>
 
-                                <div className={styles.cardProductDescription}>
-                                    <p className={`text ${styles.cardProductText}`}>
-                                        Сок прямого отжима производится из свежих яблок сладких сортов, выращенных в собственных садах. Тщательно отобранные яблоки отжимаются на прессе, полученный сок подвергается щадящей пастеризации что бы максимально сохранить витамины и другие полезные вещества.
-                                    </p>
+                                <div>
+                                    <p className={styles.cardProductTextNumber}>ТУ-10.32.16-001-02976426-2023</p>
 
-                                    {/* <p className={`text ${styles.cardProductText}`}>
-                                        Без добавления сахара, ароматизаторов, красителей, консервантов. Содержит сахара природного происхождения.
-                                    </p> */}
-                                </div>
-
-                                <h3 className={styles.cardProductTitle}>
-                                    Пищевая ценность в 100 г. сока:
-                                </h3>
-
-                                <ul className={styles.cardProductCharacteristicsList}>
-                                    <div className={styles.cardProductCharacteristicsItem}>
-                                        <li className={styles.cardProductCharacteristicsItemName}>Углеводы, г</li>
-                                        <li className={styles.cardProductCharacteristicsItemValue}>10</li>
+                                    <div className={styles.cardProductBlock}>
+                                        <h3 className={styles.cardProductTitle}>Прямой отжим из свежих яблок!</h3>
+                                        <p className={styles.cardProductText}>Сок прямого отжима произовдится из свежих яблок сладких сортов, выращенных в собственных садах в Калининградской области, поселок Тургенево! Тщательно отобранные яблоки отжимаются на прессе, полученный сок подвергается щадящей пастеризации (85 градусов цельсия), чтобы максимально сохранить витамины и другие полезные вещества.</p>
+                                        <p className={styles.cardProductText}>Вкус сока может незначительно различаться в зависимости от сорта яблок и месяца сбора урожая. Для производства сока мы используем яблоки сортов: белорусское сладкое, айдаред, хани крисп, голден делишес, глостер и др.</p>
                                     </div>
-                                    <div className={styles.cardProductCharacteristicsItem}>
-                                        <li className={styles.cardProductCharacteristicsItemName}>Жирность, ккал/кдж</li>
-                                        <li className={styles.cardProductCharacteristicsItemValue}>40/167</li>
-                                    </div>
-                                </ul>
 
-                                <div className={styles.cardProductWeightContainer}>
-                                    <span className={styles.cardProductWeightNumber}>Объем упаковки: 2 литра</span>
+                                    <div className={styles.cardProductBlock}>
+                                        <h3 className={styles.cardProductTitle}>Состав:</h3>
+                                        <ul className={styles.cardProductList}>
+                                            <li className={styles.cardProductItem}>Яблочный сок прямого отжима</li>
+                                            <li className={styles.cardProductItem}>100% сок прямого отжима из свежих яблок выращенных в собственных садах!</li>
+                                            <li className={styles.cardProductItem}>Без добавления сахара, ароматизаторов, красителей, консервантов.</li>
+                                            <li className={styles.cardProductItem}>Содержит сахара природного происхождения.</li>
+                                            <li className={styles.cardProductItem}>Продукт пастеризован и асептически упакован.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className={styles.cardProductBlock}>
+                                        <h3 className={styles.cardProductTitle}>Пищевая ценность в 100 г. сока (средние значения):</h3>
+                                        <ul className={styles.cardProductList}>
+                                            <li className={styles.cardProductItem}>Углеводы, г. 10</li>
+                                            <li className={styles.cardProductItem}>Энергетическая ценность, ккал/кДж 40/167</li>
+                                            <li className={styles.cardProductItem}>Показатели пищевой и энергетической ценности могут незначительно колебаться в зависимости от природных условий и сортовых особенностей сырья.</li>
+                                            <li className={styles.cardProductItem}>После вскрытия упаковки хранить в холодильнике при температуре от 0 до +6 °С не более 10 уток в пределах срока годности.</li>
+                                            <li className={styles.cardProductItem}>Допускается наличие осадка.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className={styles.cardProductBlock}>
+                                        <h3 className={styles.cardProductTitle}>Изготовитель:</h3>
+
+                                        <ul className={styles.cardProductList}>
+                                            <li className={styles.cardProductItem}>ООО "Агродело"</li>
+                                            <li className={styles.cardProductItem}>Адрес производства: 236004, Россия, г. Калининград ул. Полтавская</li>
+                                            <li className={styles.cardProductItem}>Адрес производства: 236034, Россия, г. Калининград ул. подполковника Емельянова, 280</li>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
                             </div>

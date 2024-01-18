@@ -6,14 +6,16 @@ import OurFarm from '../../components/OurFarm';
 import background from '../../public/img/gardens/background.webp'
 import Description from '../../components/Description';
 
-import oneImage from '../../public/img/about/background.webp';
+import oneImage from '../../public/img/gardens/img-1.png';
+import twoImage from '../../public/img/gardens/img-2.png';
+import threeImage from '../../public/img/gardens/img-3.png';
 
-import iconFirst from '../../public/img/compound/icon-1.svg';
-import iconSecond from '../../public/img/compound/icon-2.svg';
-import iconThird from '../../public/img/compound/icon-2.svg';
+import iconFirst from '../../public/img/gardens/icon-1.svg';
+import iconSecond from '../../public/img/gardens/icon-2.svg';
+import iconThird from '../../public/img/gardens/icon-3.svg';
 
 // Минимум 10 изображений
-const array = [oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage];
+const array = [oneImage, twoImage, threeImage, oneImage, twoImage, threeImage, oneImage, twoImage, threeImage, oneImage, twoImage, threeImage];
 const advantagesArray = [
     { text: 'Пять премиальных сортов яблок', img: iconFirst },
     { text: 'Не зависим от поставок из вне', img: iconSecond },
