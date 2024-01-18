@@ -74,7 +74,7 @@ export default function CardProduct() {
                                         <h3 className={styles.cardProductTitle}>Изготовитель:</h3>
 
                                         <ul className={styles.cardProductList}>
-                                            <li className={styles.cardProductItem}>ООО "Агродело"</li>
+                                            <li className={styles.cardProductItem}>ООО Агродело</li>
                                             <li className={styles.cardProductItem}>Адрес производства: 236004, Россия, г. Калининград ул. Полтавская</li>
                                             <li className={styles.cardProductItem}>Адрес производства: 236034, Россия, г. Калининград ул. подполковника Емельянова, 280</li>
                                         </ul>
