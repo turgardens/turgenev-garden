@@ -22,7 +22,7 @@ export default function CardProduct() {
             <>
                 <section
                     className={styles.cardProduct}
-                    style={{ background: '#1e4537' }}
+                    style={{ background: '#6cb71d' }}
                 >
 
                     <Scroll />
