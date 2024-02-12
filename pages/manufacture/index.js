@@ -27,9 +27,8 @@ import iconThird from '../../public/img/manufacture/icon-1.svg';
 const array = [imageFirst, imageSecond, imageThree, imageFourth, imageFifth, imageEight, imageEleven, imageSix, imageSeven, imageEight, imageEleven, imageTen];
 
 const advantagesArray = [
-    { text: 'Новая, европейская линия', img: iconFirst },
-    { text: 'Обученный персонал', img: iconSecond },
-    { text: 'Новая, европейская, полностью автоматическая линия', img: iconThird }
+    { text: 'Новая, европейская, полностью автоматическая линия', img: iconFirst },
+    { text: 'Только натруальные ингредиенты, высшего качества', img: iconSecond },
 ]
 const imagesArray = [imageApple, imageSeven, imageFirst]
 
