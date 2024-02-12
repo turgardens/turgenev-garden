@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import styles from './ContactsInformation.module.scss';
 
-import aboutBackground from "../../../public/img/gardens/image-1.webp";
+// import aboutBackground from "../../../public/img/gardens/image-1.webp";
 
 function ContactsInformation() {
     return (

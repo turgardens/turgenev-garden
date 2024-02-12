@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import styles from './Advantages.module.scss';
 
-// import ImageAdvantages from '../../public/img/advantages/decorative.jpeg';
+import ImageAdvantages from '../../../public/img/apple-juice/apple.webp';
 
 export default function Advantages() {
     return (
@@ -54,11 +54,11 @@ export default function Advantages() {
                     </div>
 
                     <div className={styles.cardProductAdvantagesImageContainer}>
-                        {/* <Image
+                        <Image
                             className={styles.cardProductAdvantagesImage}
                             src={ImageAdvantages}
                             alt='Клубника - ягодная ферма'
-                        ></Image> */}
+                        ></Image>
                     </div>
 
                     <div className={`${styles.cardProductAdvantagesItemContainer}`}>
@@ -69,10 +69,10 @@ export default function Advantages() {
                                 ></div>
                             </div>
                             <h3 className={styles.cardProductAdvantagesItemTitle}>
-                                Большой выбор
+                                Постоянный контроль
                             </h3>
                             <p className={styles.cardProductAdvantagesItemText}>
-                                Выбирайте клубнику разных сортов и пробуйте ее на вкус
+                                Выращиваем наши яблоки с момента созревания до розлива в упаковки
                             </p>
                         </div>
                         <div className={`${styles.cardProductAdvantagesItem} ${styles.cardProductAdvantagesItemFourth}`}>
@@ -82,10 +82,10 @@ export default function Advantages() {
                                 ></div>
                             </div>
                             < h3 className={styles.cardProductAdvantagesItemTitle}>
-                                Крупный плод
+                                Разные сорта яблок
                             </h3>
                             <p className={styles.cardProductAdvantagesItemText}>
-                                Премиальное качество клубники и выглядит как с картинки
+                                Белорусское сладкое, айдаред, хани крисп, голден делишес, глостер и др.
                             </p>
                         </div>
                     </div>

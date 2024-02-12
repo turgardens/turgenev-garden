@@ -204,14 +204,9 @@
   position: absolute;
   bottom: -60px;
   left: -250px;
-  width: 900px;
-  height: 900px;
+  width: 1200px;
+  height: 800px;
   z-index: 10;
-
-  animation-name: startAnimate;
-  animation-fill-mode: both;
-  animation-duration: 1s;
-  animation-delay: 1s;
 }
 
 .mainImage {
@@ -220,14 +215,6 @@
   object-fit: contain;
   object-position: center;
 }
-
-// .threeObjectContainer {
-//   position: absolute;
-//   bottom: -25px;
-//   left: -300px;
-//   width: 900px;
-//   height: 900px;
-// }
 
 @media screen and (min-width: 0px) and (max-width: 1950px) {
   .mainTextContainer {
@@ -247,7 +234,7 @@
     position: absolute;
     bottom: -20px;
     left: -120px;
-    width: 720px;
+    width: 1020px;
     height: 720px;
     z-index: 10;
   }
@@ -265,7 +252,7 @@
     position: absolute;
     bottom: -20px;
     left: -80px;
-    width: 520px;
+    width: 720px;
     height: 520px;
     z-index: 10;
   }
@@ -320,7 +307,7 @@
     left: 0px;
     bottom: 0px;
     height: 420px;
-    width: 420px;
+    width: 500px;
   }
 
   .mainTextContainer .title {
@@ -376,7 +363,7 @@
     left: 20px;
     bottom: 0px;
     height: 400px;
-    width: 400px;
+    width: 480px;
   }
 
   .mainTextContainer .title {
@@ -458,10 +445,11 @@
   // }
 
   .mainImageContainer {
-    left: 0px;
+    left: calc(50% + 75px);
+    transform: translateX(-50%);
     bottom: 20px;
     height: 340px;
-    width: 320px;
+    width: 420px;
   }
 
   // .threeObjectContainer {

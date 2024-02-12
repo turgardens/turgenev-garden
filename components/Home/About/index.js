@@ -47,13 +47,15 @@ export default function About() {
                         <p className={`text ${styles.text}`}>Тургеневские сады - предприятие Российского агропромышленного комплекса, специализирующееся на выращивании и переработке яблок, производстве соков, печенья и сидра. Мы предоставляем потребителям полезные, безопасные и доступные продукты питания и создаем уникальные вкусовые впечатления, поддерживая здоровый образ жизни наших клиентов</p>
                     </div>
 
-                    <motion.div
-                        className={styles.buttonContainer}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-                        <Link href={'/about'} className='button redColor'>Подробнее</Link>
-                    </motion.div>
+                    <div className={styles.buttonBlock}>
+                        <motion.div
+                            className={styles.buttonContainer}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                            <Link href={'/about'} className='button redColor'>Подробнее</Link>
+                        </motion.div>
+                    </div>
 
                 </div>
             </div>

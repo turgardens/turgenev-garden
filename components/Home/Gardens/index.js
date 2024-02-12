@@ -15,10 +15,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import 'swiper/css/thumbs';
 
-import oneImage from '../../../public/img/gardens/image-1.webp';
-import twoImage from '../../../public/img/gardens/image-2.webp';
+import oneImage from '../../../public/img/about/about-1.webp';
+import twoImage from '../../../public/img/about/about-2.webp';
+import threeImage from '../../../public/img/about/about-3.webp';
 
-const arrayImages = [oneImage, twoImage];
+const arrayImages = [oneImage, twoImage, threeImage];
 
 const paramsSwiper = {
     navigation: {

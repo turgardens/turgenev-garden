@@ -16,6 +16,23 @@
   height: 700px;
 }
 
+.imageContainer {
+  top: 50px;
+  position: sticky;
+  width: 900px;
+  height: 900px;
+}
+
+.image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .cardProductTitle {
   color: #fff;
   font-weight: 600;
@@ -140,6 +157,18 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 850px) {
+  .cardProduct {
+    overflow: hidden;
+  }
+
+  .imageContainer {
+    top: 0px;
+    width: 700px;
+    height: 700px;
+
+    transform: translateX(135px);
+  }
+
   .threeObjectContainer {
     margin-bottom: 50px;
     top: 50px;
@@ -152,6 +181,10 @@
     padding-bottom: 0px;
     height: auto;
     max-height: unset;
+  }
+
+  .cardProductDescription {
+    margin-top: 0px;
   }
 
   .cardProductMain {
@@ -172,6 +205,12 @@
     line-height: 50px;
   }
 
+  .cardProductText,
+  .cardProductItem {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .cardProductMain {
     display: flex;
     flex-direction: column;
@@ -179,5 +218,15 @@
 
   .cardProductDescription {
     max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .imageContainer {
+    top: 0px;
+    width: 550px;
+    height: 550px;
+
+    transform: translateX(105px);
   }
 }

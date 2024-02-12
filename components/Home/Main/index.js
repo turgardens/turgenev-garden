@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 import { usePopup } from '../../PopupContext';
 
 import juice from '@/public/img/main/apple-juice.webp';
-import ThreeObject from '@/components/ThreeObject';
 // import ThreeObject from '../../../components/ThreeObject';
 
 export default function Main() {
@@ -25,8 +24,8 @@ export default function Main() {
                         </div> */}
 
                         <div className={styles.mainImageContainer}>
-                            {/* <Image className={styles.mainImage} isLoading={() => setIsLoading(true)} src={juice} fill={true}></Image> */}
-                            <ThreeObject minRotate={true} />
+                            <Image className={styles.mainImage} isLoading={() => setIsLoading(true)} src={juice} fill={true}></Image>
+                            {/* <ThreeObject minRotate={true} /> */}
                         </div>
 
                         <div className={styles.mainTextContainer}>

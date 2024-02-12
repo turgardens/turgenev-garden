@@ -17,7 +17,7 @@ export default function Contacts() {
             </Head>
             <PageMain title='Контакты' backgroundImg={background} />
             <ContactsInformation />
-            <ContactsSocial />
+            {/* <ContactsSocial /> */}
         </>
     );
 }

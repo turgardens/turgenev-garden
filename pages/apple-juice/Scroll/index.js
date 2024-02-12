@@ -21,7 +21,7 @@ export default function ScrollTextLeft() {
 
         gsap.to(textLeft, {
             x: 0,
-            y: 260,
+            y: 860,
             rotate: -15,
             opacity: 1,
             scrollTrigger: {
@@ -34,7 +34,7 @@ export default function ScrollTextLeft() {
 
         gsap.to(textRight, {
             x: -15,
-            y: 460,
+            y: 360,
             rotate: -25,
             opacity: 1,
             scrollTrigger: {

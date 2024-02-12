@@ -7,18 +7,31 @@ import Description from '../../components/Description';
 
 import oneImage from '../../public/img/manufacture/background.webp';
 
+import imageFirst from '../../public/img/manufacture/1.webp';
+import imageSecond from '../../public/img/manufacture/2.webp';
+import imageThree from '../../public/img/manufacture/3.webp';
+import imageFourth from '../../public/img/manufacture/4.webp';
+import imageFifth from '../../public/img/manufacture/5.webp';
+import imageSix from '../../public/img/manufacture/6.webp';
+import imageSeven from '../../public/img/manufacture/7.webp';
+import imageEight from '../../public/img/manufacture/8.webp';
+import imageEleven from '../../public/img/manufacture/12.webp';
+import imageTen from '../../public/img/manufacture/10.webp';
+import imageApple from '../../public/img/manufacture/13.webp';
+
 import iconFirst from '../../public/img/manufacture/icon-1.svg';
 import iconSecond from '../../public/img/manufacture/icon-2.svg';
 import iconThird from '../../public/img/manufacture/icon-1.svg';
 
 // Минимум 10 изображений
-const array = [oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage, oneImage];
+const array = [imageFirst, imageSecond, imageThree, imageFourth, imageFifth, imageEight, imageEleven, imageSix, imageSeven, imageEight, imageEleven, imageTen];
+
 const advantagesArray = [
     { text: 'Новая, европейская линия', img: iconFirst },
     { text: 'Обученный персонал', img: iconSecond },
     { text: 'Новая, европейская, полностью автоматическая линия', img: iconThird }
 ]
-const imagesArray = [oneImage, oneImage, oneImage]
+const imagesArray = [imageApple, imageSeven, imageFirst]
 
 export default function Manufacture() {
     return (

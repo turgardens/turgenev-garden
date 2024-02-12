@@ -1,5 +1,6 @@
 .block {
   max-width: 1950px;
+  height: 100vh;
   width: 100%;
 
   position: absolute;
@@ -45,13 +46,13 @@
 
 @media screen and (min-width: 0px) and (max-width: 550px) {
   .imageContainerLeft {
-    top: 0px;
-    left: -25px;
+    top: 850px;
+    left: 205px;
   }
 
   .imageContainerRight {
     position: relative;
-    top: 180px;
+    top: 580px;
     right: 25px;
   }
 

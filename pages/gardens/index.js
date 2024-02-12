@@ -6,22 +6,35 @@ import OurFarm from '../../components/OurFarm';
 import background from '../../public/img/gardens/background.webp'
 import Description from '../../components/Description';
 
-import oneImage from '../../public/img/gardens/img-1.png';
-import twoImage from '../../public/img/gardens/img-2.png';
-import threeImage from '../../public/img/gardens/img-3.png';
+import oneImage from '../../public/img/gardens/1.webp';
+import twoImage from '../../public/img/gardens/2.webp';
+import threeImage from '../../public/img/gardens/3.webp';
+
+import one from '../../public/img/gardens/gallery/1.webp';
+import two from '../../public/img/gardens/gallery/2.webp';
+import three from '../../public/img/gardens/gallery/3.webp';
+import fourth from '../../public/img/gardens/gallery/4.webp';
+import five from '../../public/img/gardens/gallery/5.webp';
+import six from '../../public/img/gardens/gallery/6.webp';
+import seven from '../../public/img/gardens/gallery/7.webp';
+import eight from '../../public/img/gardens/gallery/8.webp';
+import nine from '../../public/img/gardens/gallery/9.jpg';
+import ten from '../../public/img/gardens/gallery/10.jpg';
+import eleven from '../../public/img/gardens/gallery/11.jpg';
+import twelve from '../../public/img/gardens/gallery/12.webp';
 
 import iconFirst from '../../public/img/gardens/icon-1.svg';
 import iconSecond from '../../public/img/gardens/icon-2.svg';
 import iconThird from '../../public/img/gardens/icon-3.svg';
 
 // Минимум 10 изображений
-const array = [oneImage, twoImage, threeImage, oneImage, twoImage, threeImage, oneImage, twoImage, threeImage, oneImage, twoImage, threeImage];
+const array = [one, two, three, fourth, five, six, seven, eight, nine, ten, eleven, twelve];
 const advantagesArray = [
     { text: 'Пять премиальных сортов яблок', img: iconFirst },
     { text: 'Не зависим от поставок из вне', img: iconSecond },
     { text: 'Полный контроль процесса', img: iconThird }
 ]
-const imagesArray = [oneImage, oneImage, oneImage]
+const imagesArray = [oneImage, twoImage, threeImage]
 
 export default function Gardens() {
     return (
