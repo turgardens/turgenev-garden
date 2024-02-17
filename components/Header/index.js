@@ -6,9 +6,7 @@ export default function Header() {
     const [open, setOpen] = React.useState(false);
 
     const openHeader = () => {
-        if (open === true) {
-            setOpen(!open);
-        }
+        setOpen(!open);
     }
 
     React.useEffect(() => {
