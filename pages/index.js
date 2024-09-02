@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Тургеневские сады - натуральные продукты из Калининградской области</title>
+        <meta name="yandex-verification" content="6793b514deed019f" />
       </Head>
 
       <Main />
