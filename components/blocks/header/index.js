@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import styles from './header.module.scss';
 
-import logo from '../../public/img/header/logo.svg';
+import logo from '../../../public/img/header/logo.svg';
 
 export default function Header() {
     const [open, setOpen] = React.useState(false);
