@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react';
-import Head from 'next/head';
 import PageMain from '../../components/blocks/pageMain';
 import OurFarm from '../../components/blocks/ourFarm';
 

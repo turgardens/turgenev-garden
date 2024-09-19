@@ -11,6 +11,7 @@ export default function FilterButtons({ tastesButtons, currentProduct }) {
                 {tastesButtons && tastesButtons.map((item, index) => {
                     return (
                         <motion.div
+                            key={index}
                             className={styles.buttonContainer}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}

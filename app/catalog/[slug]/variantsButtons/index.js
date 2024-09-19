@@ -11,11 +11,12 @@ export default function FilterButtons({ variantsButtons, activeButton, setActive
                 {variantsButtons && variantsButtons.map((item, index) => {
                     return (
                         <motion.div
+                            key={index}
                             className={styles.buttonContainer}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-                            <button className={activeButton === index ? `${styles.variantButton} ${styles.active}` : `${styles.variantButton} `} onClick={() => [setActiveVariant(item.image), setActiveButton(index)]} key={index}>{item.size}</button>
+                            <button className={activeButton === index ? `${styles.variantButton} ${styles.active}` : `${styles.variantButton} `} onClick={() => [setActiveVariant(item.image), setActiveButton(index)]}>{item.size}</button>
                         </motion.div>
                     )
                 })}

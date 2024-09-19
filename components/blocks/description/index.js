@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Scroll from './Scroll';
+import Scroll from './scroll';
 import styles from './description.module.scss';
 
 export default function Description({ title, subTitle, advantagesArray, imagesArray, scrollIcon }) {
