@@ -14,7 +14,7 @@ import BackgroundSecond from "../../../../../public/img/decorative/element-3.web
 import BackgroundThird from "../../../../../public/img/decorative/element-6.webp"
 
 // Движение объектов при скролле
-export default function ScrollTextLeft() {
+export default function Scroll() {
     const imgLeftRef = useRef(null);
     const imgRightRef = useRef(null);
     const imgCenterRef = useRef(null);

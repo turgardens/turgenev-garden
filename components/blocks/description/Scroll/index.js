@@ -18,7 +18,7 @@ import BackgroundSecondApple from "../../../../public/img/decorative/element-7.w
 import BackgroundThirdApple from "../../../../public/img/decorative/element-2.webp"
 
 // Движение объектов при скролле
-export default function ScrollTextLeft({ scrollIcon }) {
+export default function Scroll({ scrollIcon }) {
 
     const imgLeftRef = useRef(null);
     const imgRightRef = useRef(null);
