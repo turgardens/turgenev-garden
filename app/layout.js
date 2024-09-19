@@ -2,8 +2,8 @@ import "./styles/globals.css";
 import "./styles/fonts.css";
 import "./styles/title.css";
 import "./styles/button.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/blocks/header";
+import Footer from "../components/blocks/footer";
 import VideoPlayer from "../components/elements/videoPopup";
 
 export const metadata = {
