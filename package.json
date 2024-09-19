@@ -1,5 +1,5 @@
 {
-  "name": "turgenevs-garden",
+  "name": "turgarden",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,27 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.3.2",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.4",
-    "gsap": "^3.12.2",
-    "gsap-trial": "^3.12.2",
-    "motion": "^10.16.4",
-    "next": "13.4.19",
-    "node-sass": "^9.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-player": "^2.13.0",
-    "react-scroll": "^1.8.9",
-    "react-three-fiber": "^6.0.13",
-    "sass": "^1.67.0",
-    "swiper": "^10.3.1",
-    "three": "^0.156.1",
-    "three-gltf-loader": "^1.111.0"
+    "framer-motion": "^11.5.4",
+    "gsap": "^3.12.5",
+    "next": "14.2.8",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-player": "^2.16.0",
+    "sass": "^1.78.0",
+    "swiper": "^11.1.12",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
-    "file-loader": "^6.2.0",
-    "gltf-webpack-loader": "^1.0.6"
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8"
   }
 }

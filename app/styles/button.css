@@ -1,0 +1,74 @@
+.button {
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: none;
+    color: #fff;
+    font-family: Comic-cat;
+    background-color: #6cb71d;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -52px;
+    width: 62px;
+    height: 100%;
+    background-image: url('../../public/img/button/left-green.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 62px;
+    height: 100%;
+    background-image: url('../../public/img/button/right-green.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.redColor {
+    background-color: #e83028;
+}
+
+.redColor::after {
+    background-image: url('../../public/img/button/left-red.svg');
+}
+
+.redColor::before {
+    background-image: url('../../public/img/button/right-red.svg');
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+    .button {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 42px;
+        margin-right: 42px;
+        font-size: 16px;
+    }
+
+    .button::after {
+        left: -42px;
+    }
+}

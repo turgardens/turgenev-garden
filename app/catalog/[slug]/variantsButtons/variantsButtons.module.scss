@@ -1,0 +1,94 @@
+.casesFilterButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.variantButton {
+  display: inline-block;
+  position: relative;
+  padding: 20px 40px;
+  background: #fff;
+  color: #111;
+  font-family: Comic-cat;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+  z-index: 1;
+
+  white-space: nowrap;
+}
+
+.variantButton {
+  padding: 10px 20px;
+  transform: translateY(0px);
+  border: 2px dashed #111;
+  background: none;
+  transition: 0.2s;
+}
+
+.buttonContainer {
+  margin-right: 20px;
+}
+
+.button:last-child {
+  margin: 0px;
+}
+
+.button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.variantButton.active {
+  background: black;
+  color: #fff;
+}
+
+.button.active {
+  background: black;
+  color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .buttonContainer {
+    margin-right: 15px;
+  }
+
+  .variantButton {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 875px) {
+  .buttonContainer {
+    margin-right: 10px;
+  }
+
+  .variantButton {
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px;
+    background: #fff;
+    color: #111;
+    font-family: Comic-cat;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+    z-index: 1;
+
+    white-space: nowrap;
+  }
+}

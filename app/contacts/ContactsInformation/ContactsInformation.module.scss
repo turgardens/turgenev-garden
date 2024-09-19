@@ -1,0 +1,406 @@
+.contactsInformation {
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  overflow: hidden;
+}
+
+.contactsInformationWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactsInformationContent {
+  margin-right: 100px;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+.contactsInformationContent {
+  width: 50%;
+}
+
+.contactsInformationTitle {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.contactsInformationButtonContainer {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.contactsInformationButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 20px;
+
+  //   background-image: url("../../images/contacts-page/decoration-contactsInformation-button.svg");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contactsInformationButton {
+  position: relative;
+  min-width: 200px;
+  opacity: 1;
+  padding: 12.5px 30px;
+  padding-right: 65px;
+  border-radius: 30px;
+  border: 1px solid rgb(63, 142, 216);
+  background: rgb(63, 142, 216);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.contactsInformationButton:hover {
+  opacity: 0.8;
+}
+
+.contactsInformationSubtitle {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-family: Comic-cat;
+  font-weight: 600;
+}
+
+.contactsInformationList {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactsInformationItem {
+  max-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactsInformationLink {
+  position: relative;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contactsInformationLink--hot-line::after {
+  content: "Горячая линия";
+  position: absolute;
+  left: 0;
+  top: -17.5px;
+  font-size: 10px;
+  color: #999;
+  font-weight: 300;
+}
+
+.contactsInformationLink--moscow::after {
+  content: "Москва";
+  position: absolute;
+  left: 0;
+  top: -17.5px;
+  font-size: 10px;
+  color: #999;
+  font-weight: 300;
+}
+
+.contactsInformationPhone {
+  color: #6cb71d;
+  font-size: 22px;
+}
+
+.contactsInformationIcon {
+  padding-left: 38px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contactsInformationIcon::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contactsInformationMail::after {
+  background-image: url("../../../public/img/social/mail-gray.svg");
+}
+
+.contactsInformationAdress::after {
+  background-image: url("../../../public/img/header/map-icon.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.contactsInformationAdress {
+  margin-bottom: 50px;
+}
+
+.contactsInformationLink:hover {
+  opacity: 0.6;
+}
+
+.contactsInformationText {
+  margin-bottom: 50px;
+  line-height: 26px;
+}
+
+.contactsInformationItemImg {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// .contactsInformationItem:nth-child(1) .contactsInformationItemImg {
+//   background-image: url("../../images/excursions/about-icon-first.svg");
+// }
+
+// .contactsInformationItem:nth-child(2) .contactsInformationItemImg {
+//   background-image: url("../../images/excursions/about-icon-second.svg");
+// }
+
+// .contactsInformationItem:nth-child(3) .contactsInformationItemImg {
+//   background-image: url("../../images/excursions/about-icon-third.svg");
+// }
+
+.contactsInformationItemText {
+  text-align: center;
+}
+
+.image {
+  position: relative;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+.imageContainer {
+  position: relative;
+  transform: rotate(0deg);
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/img/contacts/img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+
+  transition: 0.8s;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+.image,
+.imageContainer {
+  min-width: 650px;
+  min-height: 650px;
+}
+
+.imageDecorativeElement {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(3deg);
+  background: #f3e6bc;
+
+  z-index: 5;
+
+  transition: 0.6s;
+}
+
+.imageButton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  width: 75px;
+  height: 75px;
+  z-index: 10;
+  transition: 0.4s;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.massengerList {
+  margin: 0px;
+  margin-bottom: 35px;
+  padding: 0px;
+  display: flex;
+}
+
+.massengerItemContainer {
+  display: inline-block;
+  width: fit-content;
+}
+
+.massengerItem {
+  margin-right: 20px;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.telegram {
+  background-image: url("../../../public/img/icons/telegram-black.svg");
+}
+
+.whatsapp {
+  background-image: url("../../../public/img/icons/whatsapp-black.svg");
+}
+
+.viber {
+  background-image: url("../../../public/img/icons/viber-black.svg");
+}
+
+.vk {
+  background-image: url("../../../public/img/icons/vk-black.svg");
+}
+
+@keyframes startAnimate {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .contactsInformation {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .image,
+  .imageContainer {
+    min-width: 450px;
+    min-height: 450px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .contactsInformation {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .contactsInformationTitle {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .image,
+  .imageContainer {
+    min-width: 350px;
+    min-height: 350px;
+  }
+
+  .image {
+    display: none;
+    margin-bottom: 75px;
+  }
+
+  .contactsDepartmentsItem {
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .contactsSale .contactsSaleImage {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .contactsSale .contactsSaleWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contactsSale .contactsSaleImage {
+    display: none;
+  }
+
+  .contactsInformationContent {
+    margin: 0;
+    width: 100%;
+  }
+
+  .contactsInformationImageContainer {
+    display: none;
+  }
+
+  .contactsDepartmentsItem {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .image,
+  .imageContainer {
+    min-width: 100%;
+    min-height: 320px;
+    width: 100%;
+    height: 320px;
+  }
+
+  .contactsInformationIcon {
+    font-size: 18px;
+  }
+
+  .image {
+    margin-bottom: 100px;
+  }
+}

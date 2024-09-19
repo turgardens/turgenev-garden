@@ -1,0 +1,281 @@
+.product {
+  height: 100vh;
+  min-height: 800px;
+  overflow: hidden;
+
+  transition: 1s;
+}
+
+.container {
+  height: 100%;
+  width: auto;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  top: 75px;
+  margin: auto;
+}
+
+@keyframes showTitle {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.title {
+  margin: 0px;
+  margin-bottom: 25px;
+
+  font-size: 64px;
+  font-family: Gant;
+  font-weight: 100;
+  line-height: 60px;
+
+  animation-name: showText;
+  animation-delay: 0.1s;
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  position: relative;
+  width: calc(50% - 50px);
+  z-index: 1;
+
+  animation-name: showText;
+  animation-delay: 0.2s;
+  animation-duration: 1.6s;
+  animation-fill-mode: both;
+
+  animation-name: showTitle;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.imageContainer {
+  position: relative;
+  height: 60vh;
+  max-height: 850px;
+  min-height: 595px;
+  width: 50%;
+
+  animation-name: showTitle;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: contain;
+}
+
+.descriptionTitle {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Comic-cat;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text {
+  margin: 0;
+  font-size: 18px;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.chrList {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.chrItem {
+  margin-right: 20px;
+}
+
+.chrItem:last-child {
+  margin-right: 0px;
+}
+
+.chrItemName {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.chrItemValue {
+  font-family: Comic-cat;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.tastesList {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 50px;
+  display: flex;
+}
+
+.desktop {
+  display: none;
+}
+
+.block {
+  margin-bottom: 25px;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .title {
+    margin-bottom: 10px;
+    font-size: 44px;
+  }
+
+  .main {
+    top: 40px;
+  }
+
+  .imageContainer {
+    min-height: 395px;
+    max-height: 650px;
+  }
+
+  .descriptionTitle {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .chrItemName {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+
+  .chrItemValue {
+    font-size: 22px;
+  }
+
+  .block {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 875px) {
+  .product {
+    flex-direction: column;
+    padding-top: 95px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+
+  .block {
+    margin-bottom: 25px;
+  }
+
+  .main {
+    top: 0;
+  }
+
+  .imageContainer {
+    margin-bottom: 15px;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .main {
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: 25px;
+
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .description,
+  .imageContainer {
+    width: 100%;
+  }
+
+  .tastesList {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+
+    display: flex;
+  }
+}

@@ -1,0 +1,157 @@
+.aboutPartners {
+  padding-top: 0px;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+
+.aboutPartners .container {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.aboutPartnersTitleContainer {
+  margin-bottom: 85px;
+  text-align: center;
+}
+
+.aboutPartnersTitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: Gant;
+  text-align: center;
+}
+
+.aboutPartnersSliderContainer {
+  margin: auto;
+  position: relative;
+}
+
+.aboutPartners .swiperWrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: center;
+}
+
+.aboutPartnersSlider .swiperContainer {
+  overflow: visible;
+}
+
+.aboutPartnersSlider .swiperSlide {
+  position: relative;
+  height: 450px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.aboutPartnersSlider .swiperSlide::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -1px;
+  width: 101%;
+  height: 80px;
+
+  // background-image: url("../../images/excursions/decoration-line.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutPartnersSliderImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.aboutPartnersSlider .swiperSlideActive {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.aboutPartnersArrowNext,
+.aboutPartnersArrowPrev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  // background-image: url("../../images/about-page/partners-arrow-icon.svg");
+  background-position: center;
+  z-index: 1000;
+  cursor: pointer;
+
+  -webkit-transition: 0.2s;
+
+  -o-transition: 0.2s;
+
+  transition: 0.2s;
+}
+
+.aboutPartnersArrowNext:hover,
+.aboutPartnersArrowPrev:hover {
+  opacity: 0.8;
+}
+
+.aboutPartnersArrowPrev {
+  left: -85px;
+}
+
+.aboutPartnersArrowNext {
+  right: -85px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.swiper {
+  padding-left: 75px !important;
+  padding-right: 75px !important;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .aboutPartnersTitleContainer {
+    margin-bottom: 65px;
+  }
+
+  .aboutPartners .container {
+    margin: 0 auto;
+    max-width: 1340px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .aboutPartnersTitleContainer {
+    margin-bottom: 50px;
+  }
+
+  .aboutPartnersArrowNext,
+  .aboutPartnersArrowPrev {
+    display: none;
+  }
+
+  .aboutPartnersSliderContainer {
+    position: relative;
+  }
+}

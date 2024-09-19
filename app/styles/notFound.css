@@ -1,0 +1,77 @@
+/* 404 */
+
+.notFound {
+    position: relative;
+    display: flex;
+    height: 60vh;
+    min-height: 1000px;
+
+    background: url("../public/img/404/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.notFound::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.notFound::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-image: url("../public/img/footer/decorative.webp");
+    height: 80px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    z-index: 0;
+}
+
+.notFoundTitle {
+    margin: 0px;
+    margin-bottom: 35px;
+    padding: 0px;
+    font-size: 100px;
+    font-family: Gant;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    animation-name: startAnimate;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+}
+
+.notFoundText {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+    line-height: 26px;
+
+    color: #fff;
+    z-index: 20;
+}
+
+
+.notFoundContent {
+    margin: 0px;
+    padding: 0px;
+    font-size: 22px;
+    line-height: 32px;
+
+    animation-name: startAnimate;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+}

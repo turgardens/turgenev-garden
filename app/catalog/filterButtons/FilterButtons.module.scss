@@ -1,0 +1,142 @@
+.casesFilterButtons {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 30px;
+  scrollbar-width: none;
+
+  margin-left: -20vw;
+  padding-left: 20vw;
+  margin-right: -20vw;
+  padding-right: 20vw;
+  padding-top: 15px;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+@keyframes startAnimate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.casesFilterButton.active {
+  color: #111;
+}
+
+.casesFilterButtons::-webkit-scrollbar {
+  width: 0;
+  -ms-overflow-style: none;
+  background: transparent; /* make scrollbar transparent */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 20px 40px;
+  background: #fff;
+  color: #111;
+  font-family: Comic-cat;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+  z-index: 1;
+
+  white-space: nowrap;
+}
+
+.button {
+  margin-right: 20px;
+}
+
+.button:last-child {
+  margin: 0px;
+}
+
+.button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.button.active {
+  background: #6cb71d;
+  color: #fff;
+}
+
+.button.deactive {
+  position: relative;
+  background: #999;
+  color: #fff;
+  cursor: default;
+}
+
+.button.deactive::after {
+  content: "Скоро!";
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #6cb71d;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1950px) {
+  .casesFilterButtons {
+    margin-left: -20vw;
+    padding-left: 20vw;
+    margin-right: -20vw;
+    padding-right: 20vw;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+  .casesFilterButtons {
+    margin-left: -60px;
+    padding-left: 60px;
+    margin-right: -60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .casesFilterButtons {
+    margin-right: -20px;
+    padding-left: 20px;
+    margin-left: -20px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-top: 20px;
+    margin-top: 0px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .button {
+    padding: 12px 20px;
+  }
+
+  .casesFilterButtons::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent; /* make scrollbar transparent */
+    scrollbar-width: none;
+  }
+}

@@ -1,0 +1,516 @@
+.main {
+  opacity: 0;
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  min-height: 900px;
+  background: url("../../../../public/img/main/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  transition: 0.4;
+}
+
+.main.active {
+  opacity: 1;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url("../../../../public/img/footer/decorative.webp");
+  height: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+}
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.mainTextContainer {
+  max-width: 485px;
+  margin: auto 0;
+
+  margin-left: auto;
+
+  animation-name: startAnimate;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+
+  z-index: 50;
+}
+
+.mainTextContainer .title {
+  margin: 0px;
+  font-size: 64px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-family: Gant;
+  color: #fff;
+}
+
+.mainTextContainer p {
+  margin-bottom: 60px;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 500;
+  font-family: Comic-cat;
+  color: #fff;
+
+  text-transform: uppercase;
+}
+
+.mainContainer {
+  height: 100%;
+}
+
+.massengerList {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.massengerItem span {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: 500;
+
+  transition: 0.4s;
+}
+
+.massengerItem:hover {
+  opacity: 0.8;
+}
+
+.massengerItem:hover span {
+  right: 20px;
+  opacity: 1;
+}
+
+.phoneMobileLink {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  z-index: 5;
+}
+
+.buttonContainer {
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.mainButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.videoButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  border: none;
+  text-align: start;
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.videoButtonIcon {
+  margin-right: 15px;
+  display: block;
+  width: 58px;
+  height: 58px;
+
+  background-image: url("../../../../public/img/main/play.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.videoButtonText {
+  max-width: 170px;
+  font-family: Comic-cat;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.videoButton:hover .videoButtonIcon {
+  scale: 1.15;
+}
+
+.mainImageContainer {
+  position: absolute;
+  bottom: -60px;
+  left: -250px;
+  width: 1200px;
+  height: 800px;
+  z-index: 10;
+
+  animation-name: startImage;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+@keyframes startAnimate {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes startImage {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1950px) {
+  .mainTextContainer {
+    max-width: 575px;
+  }
+
+  .mainTextContainer .title {
+    margin: 0px;
+    font-size: 52px;
+  }
+
+  .mainTextContainer p {
+    font-size: 26px;
+  }
+
+  .mainImageContainer {
+    position: absolute;
+    bottom: -100px;
+    left: -120px;
+    width: 620px;
+    height: 720px;
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .main {
+    margin: auto;
+    max-width: 1600px;
+    max-height: 700px;
+    min-height: 500px;
+  }
+
+  .mainImageContainer {
+    position: absolute;
+    bottom: -20px;
+    left: -80px;
+    width: 520px;
+    height: 520px;
+    z-index: 10;
+  }
+
+  .mainTextContainer {
+    position: relative;
+    top: 30px;
+
+    max-width: 400px;
+    margin: auto 0;
+
+    margin-left: auto;
+
+    animation-name: startAnimate;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+
+    z-index: 50;
+  }
+
+  .mainTextContainer p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .videoButton {
+    margin-bottom: 25px;
+  }
+
+  .videoButtonIcon {
+    margin-right: 0px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .videoButtonText {
+    display: none;
+  }
+
+  .buttonContainer {
+    margin-right: 10px;
+  }
+
+  .mainTextContainer p {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 930px) {
+  .main {
+    max-height: 600px;
+  }
+
+  .mainTextContainer {
+    width: 100%;
+    max-width: 100%;
+    max-width: 270px;
+  }
+
+  .mainImageContainer {
+    left: 0px;
+    bottom: 0px;
+    height: 420px;
+    width: 500px;
+  }
+
+  .mainTextContainer .title {
+    font-size: 38px;
+  }
+
+  .mainTextContainer p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Comic-cat;
+    color: #fff;
+
+    text-transform: uppercase;
+  }
+
+  .mainButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .videoButtonIcon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
+    background-position: center;
+  }
+
+  .videoButtonText {
+    font-size: 16px;
+  }
+
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -100px;
+  //   bottom: 50px;
+  //   width: 450px;
+  //   height: 450px;
+  // }
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+  .main {
+    overflow: hidden;
+    max-height: 750px;
+    min-height: 650px;
+    overflow: visible;
+  }
+
+  .mainImageContainer {
+    left: 20px;
+    bottom: 0px;
+    height: 400px;
+    width: 480px;
+  }
+
+  .mainTextContainer .title {
+    margin: 0px;
+    font-size: 40px;
+    letter-spacing: 1.7px;
+  }
+
+  .mainTextContainer {
+    margin: 0;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 100%;
+  }
+
+  .mainTextContainer h2 {
+    margin: 0px;
+    font-size: 28px;
+  }
+
+  .mainButtonsContainer {
+    align-items: center;
+  }
+
+  .mainButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -50px;
+  //   bottom: 50px;
+  //   width: 450px;
+  //   height: 450px;
+  // }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .main {
+    position: relative;
+    height: 950px;
+    // background-position: -250px;
+  }
+
+  .phoneMobileLink {
+    display: block;
+  }
+
+  .mainTextContainer {
+    margin-top: 140px;
+  }
+
+  .mainTextContainer h1 {
+    margin: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .mainTextContainer h2 {
+    margin: 0px;
+    font-size: 23px;
+  }
+
+  .mainTextContainer p {
+    margin-bottom: 20px;
+  }
+
+  // .threeObjectContainer {
+  //   left: 0px;
+  //   bottom: -40px;
+  //   width: 420px;
+  //   height: 420px;
+  // }
+
+  .mainImageContainer {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    height: 320px;
+    width: 400px;
+  }
+
+  // .threeObjectContainer {
+  //   position: absolute;
+  //   left: -10%;
+  //   bottom: 20px;
+  //   width: 400px;
+  //   height: 400px;
+  // }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .mainTextContainer {
+    max-width: 335px;
+    margin: auto;
+    margin-top: 90px;
+  }
+
+  .massengerList {
+    bottom: 10px;
+    top: unset;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+  }
+
+  .massengerItem {
+    margin: 0px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .mainTextContainer h1 {
+    font-size: 26px;
+  }
+
+  .mainTextContainer p {
+    font-size: 20px;
+  }
+}

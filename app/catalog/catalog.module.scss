@@ -1,0 +1,95 @@
+.catalog {
+  overflow: hidden;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryList {
+  padding-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.button,
+.variantButton {
+  display: inline-block;
+  position: relative;
+  padding: 20px 40px;
+  background: #fff;
+  color: #111;
+  font-family: Comic-cat;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+  z-index: 1;
+
+  white-space: nowrap;
+}
+
+.variantButton {
+  margin-right: 20px;
+  padding: 10px 20px;
+  transform: translateY(0px);
+  border: 2px dashed #111;
+  background: none;
+  transition: 0.2s;
+}
+
+.variantButton {
+  margin-right: 20px;
+}
+
+.button {
+  margin-right: 20px;
+}
+
+.button:last-child {
+  margin: 0px;
+}
+
+.variantButton:hover {
+  transform: translateY(-5px);
+}
+
+.button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.variantButton.active {
+  background: black;
+  color: #fff;
+}
+
+.button.active {
+  background: #6cb71d;
+  color: #fff;
+}
+
+.button.deactive {
+  position: relative;
+  background: #999;
+  color: #fff;
+  cursor: default;
+}
+
+.button.deactive::after {
+  content: "Скоро!";
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #6cb71d;
+  border-radius: 25px;
+}

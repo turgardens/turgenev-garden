@@ -1,0 +1,129 @@
+.catalogListItem {
+  position: relative;
+  transform: translate(0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+
+  animation-name: open;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.catalogListItemImageContainer {
+  position: relative;
+}
+
+.catalogListItemImage {
+  display: flex;
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 25px;
+}
+
+.loader {
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #d3d3d3;
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.catalogListItemName {
+  display: block;
+  position: relative;
+  background: #eaeaea;
+  color: #eaeaea;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.catalogListItemName::after {
+  content: "text";
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  background: #eaeaea;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1440px) {
+  .catalogListItem {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+  .catalogListItemImage {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+  .catalogListItemImage {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .catalogListItemName {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .catalogListItemImage {
+    min-width: 140px;
+    max-width: 150px;
+    min-height: 130px;
+    max-height: 130px;
+  }
+
+  .catalogListItem:hover .catalogListItemImage {
+    transform: translateY(0px);
+  }
+}
