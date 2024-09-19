@@ -9,12 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 import styles from './scroll.module.scss';
 
-import BackgroundFirst from "../../../../../public/img/decorative/element-4.webp"
-import BackgroundSecond from "../../../../../public/img/decorative/element-3.webp"
-import BackgroundThird from "../../../../../public/img/decorative/element-6.webp"
+import BackgroundFirst from "../../../public/img/decorative/element-4.webp"
+import BackgroundSecond from "../../../public/img/decorative/element-3.webp"
+import BackgroundThird from "../../../public/img/decorative/element-6.webp"
 
 // Движение объектов при скролле
-export default function Scroll() {
+export default function ScrollGarden() {
     const imgLeftRef = useRef(null);
     const imgRightRef = useRef(null);
     const imgCenterRef = useRef(null);

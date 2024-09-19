@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import Scroll from './scroll';
+import Scroll from '../../../elements/scrollGarden';
 import styles from './gardens.module.scss';
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,6 +24,7 @@ import threeImage from '../../../../public/img/about/about-3.webp';
 const arrayImages = [oneImage, twoImage, threeImage];
 
 import './swiper.css';
+import ScrollGarden from '../../../elements/scrollGarden';
 
 const paramsSwiper = {
     navigation: {
@@ -82,7 +83,7 @@ export default function Gardens() {
 
     return (
         <section ref={containerRef} className={styles.gardens}>
-            <Scroll />
+            <ScrollGarden />
 
             <div className="container">
                 <div ref={textRef} className={styles.wrapper}>
