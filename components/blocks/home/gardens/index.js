@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import Scroll from '../../../elements/scroll';
+import Scroll from './scroll';
 import styles from './gardens.module.scss';
 
 import { Swiper, SwiperSlide } from "swiper/react";
