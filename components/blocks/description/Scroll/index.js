@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 gsap.registerPlugin(ScrollTrigger);
 
-import styles from './Scroll.module.scss';
+import styles from './scroll.module.scss';
 
 import BackgroundFirst from "../../../../public/img/decorative/element-4.webp"
 import BackgroundSecond from "../../../../public/img/decorative/element-3.webp"

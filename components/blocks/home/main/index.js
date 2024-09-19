@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 import styles from "./main.module.scss";
 
-import juice from '@/public/img/main/apple-juice.webp';
+import juice from '../../../../public/img/main/apple-juice.webp';
 
 export default function Main() {
     const [isLoading, setIsLoading] = React.useState();
