@@ -62,7 +62,7 @@
   z-index: 50;
 }
 
-.mainTextContainer .title {
+.mainTitle {
   margin: 0px;
   font-size: 64px;
   letter-spacing: 1.7px;
@@ -236,7 +236,7 @@
     max-width: 575px;
   }
 
-  .mainTextContainer .title {
+  .mainTitle {
     margin: 0px;
     font-size: 52px;
   }
@@ -335,7 +335,7 @@
     width: 500px;
   }
 
-  .mainTextContainer .title {
+  .mainTitle {
     font-size: 38px;
   }
 
@@ -392,7 +392,7 @@
     width: 480px;
   }
 
-  .mainTextContainer .title {
+  .mainTitle {
     margin: 0px;
     font-size: 40px;
     letter-spacing: 1.7px;
@@ -435,19 +435,20 @@
     // background-position: -250px;
   }
 
+  .mainTitle {
+    font-size: 32px;
+  }
+
+  .mainSubtitle {
+    font-size: 20px;
+  }
+
   .phoneMobileLink {
     display: block;
   }
 
   .mainTextContainer {
     margin-top: 140px;
-  }
-
-  .mainTextContainer h1 {
-    margin: 0px;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #fff;
   }
 
   .mainTextContainer h2 {
@@ -502,15 +503,5 @@
   .massengerItem {
     margin: 0px;
     margin-right: 20px;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 400px) {
-  .mainTextContainer h1 {
-    font-size: 26px;
-  }
-
-  .mainTextContainer p {
-    font-size: 20px;
   }
 }
