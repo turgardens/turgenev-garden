@@ -9,6 +9,7 @@ export default function Footer() {
 
     const pathname = usePathname();
     const hideFooter = pathname.includes('/catalog/') ? false : true;
+    const hideContacts = pathname.includes('/contacts') ? false : true;
     const whiteBackground = ['/about', '/catalog', '/wholesalers', '/contacts']
         .some(path => pathname.includes(path)) ? false : true;
 
@@ -55,15 +56,19 @@ export default function Footer() {
                                     </li>
                                 </ul> */}
                             </div>
-                            <div className={styles.footerRightBlock}>
-                                <div className={styles.footerRightBlockWrapper}>
-                                    <a href="+79217100080" className={`${styles.footerContactLink} ${styles.footerContactLinkPhone}`}>+7 921 710-00-80</a>
-                                    <a href="mailto:agrodelo.39@mail.ru"
-                                        className={`${styles.footerContactLink} ${styles.footerContactLinkEmail}`}>agrodelo.39@mail.ru</a>
-                                    <a href="https://yandex.ru/maps/-/CDHqQEkL"
-                                        className={`${styles.footerContactLink} ${styles.footerContactLinkMap}`}>Полтавская, 3</a>
+
+                            {hideContacts &&
+                                <div className={styles.footerRightBlock}>
+                                    <div className={styles.footerRightBlockWrapper}>
+                                        <a href="+79217100080" className={`${styles.footerContactLink} ${styles.footerContactLinkPhone}`}>+7 921 710-00-80</a>
+                                        <a href="mailto:agrodelo.39@mail.ru"
+                                            className={`${styles.footerContactLink} ${styles.footerContactLinkEmail}`}>agrodelo.39@mail.ru</a>
+                                        <a href="https://yandex.ru/maps/-/CDHqQEkL"
+                                            className={`${styles.footerContactLink} ${styles.footerContactLinkMap}`}>Полтавская, 3</a>
+                                    </div>
                                 </div>
-                            </div>
+                            }
+
                         </div>
                     </div>
                 </footer >

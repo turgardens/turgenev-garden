@@ -245,7 +245,7 @@
   }
 
   .imageContainer {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .desktop {
@@ -259,10 +259,10 @@
   }
 
   .title {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 42px;
   }
 
   .description,
@@ -277,5 +277,11 @@
     bottom: 0px;
 
     display: flex;
+  }
+
+  .imageContainer {
+    height: auto;
+    max-height: 650px;
+    min-height: 300px;
   }
 }

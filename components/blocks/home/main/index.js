@@ -41,7 +41,7 @@ export default function Main() {
                         </div>
 
                         <div className={styles.mainTextContainer}>
-                            <h1 className={styles.title}>Новые вкусы, новые впечатления!</h1>
+                            <h1 className={styles.title}>Новые вкусы,<br /> новые впечатления!</h1>
                             <p>Интересные сочетания, яркие вкусы, прямой отжим и высочайшее качество</p>
 
                             <div className={styles.mainButtonsContainer}>
