@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import Scroll from './scroll'
+// import Scroll from './scroll'
 import styles from './gardens.module.scss';
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -82,7 +82,7 @@ export default function Gardens() {
 
     return (
         <section ref={containerRef} className={styles.gardens}>
-            <Scroll />
+            {/* <Scroll /> */}
 
             <div className="container">
                 <div ref={textRef} className={styles.wrapper}>
