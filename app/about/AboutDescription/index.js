@@ -10,8 +10,6 @@ import aboutDescriptionSecond from "../../../public/img/about/background-3.webp"
 
 export default function AboutDescription() {
 
-    const imgRef = React.useRef(null);
-
     return (
         <section className={styles.aboutDescription}>
             <div className="container">
@@ -49,6 +47,7 @@ export default function AboutDescription() {
                                     Наличие собственных садов и постоянный круглогодичный контроль производства позволяет получать необходимое количество высококачественной продукции
                                 </p>
                             </div>
+
                             {/* <div className="about-description__button-container visually-hidden">
                                 <i className="about-description__button-icon"></i>
                                 <Link to="/excursions" className="about-description__button">
@@ -57,7 +56,7 @@ export default function AboutDescription() {
                             </div> */}
                         </div>
                         <div className={`${styles.aboutDescriptionImageContainer} ${styles.aboutDescriptionImageRight}`}>
-                            <Image src={aboutDescriptionSecond} fill={true} className={styles.aboutDescriptionImage} alt="Залесский фермер Девочка с йогуртом" />
+                            <Image src={aboutDescriptionSecond} fill={true} className={styles.aboutDescriptionImage} alt="Тургеневские сады - натуральные продукты" />
                         </div>
                     </div>
 
