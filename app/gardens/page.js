@@ -31,7 +31,7 @@ import iconThird from '../../public/img/gardens/icon-3.svg';
 // Минимум 10 изображений
 const array = [one, two, three, fourth, five, six, seven, eight, nine, ten, eleven, twelve];
 const advantagesArray = [
-    { text: 'Пять премиальных сортов яблок', img: iconFirst },
+    { text: 'Семь премиальных сортов яблок', img: iconFirst },
     { text: 'Не зависим от поставок из вне', img: iconSecond },
     { text: 'Полный контроль процесса', img: iconThird }
 ]

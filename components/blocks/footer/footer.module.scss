@@ -388,6 +388,10 @@
     display: none;
   }
 
+  .footerContactLink {
+    font-size: 16px;
+  }
+
   .footerTitle {
     font-size: 48px;
     padding: 0;
@@ -400,15 +404,6 @@
     top: -60px;
     background-position: right;
     width: 340px;
-  }
-
-  .footerContactLink {
-    font-size: 22px;
-  }
-
-  .footerContactLink.footerContactLinkMap {
-    margin-top: 0px;
-    font-size: 22px;
   }
 
   .footerContactLink::after {
