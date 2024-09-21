@@ -58,11 +58,29 @@
     background-image: url('../../public/img/button/right-red.svg');
 }
 
+
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+    .button {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    .button::after {
+        left: -40px;
+    }
+
+    .button::before {
+        right: -60px;
+    }
+}
+
 @media screen and (min-width: 0px) and (max-width: 900px) {
     .button {
         padding: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 14px;
+        padding-right: 14px;
         margin-left: 42px;
         margin-right: 42px;
         font-size: 16px;

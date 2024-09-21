@@ -62,7 +62,7 @@
   z-index: 50;
 }
 
-.mainTitle {
+.mainTextContainer .title {
   margin: 0px;
   font-size: 64px;
   letter-spacing: 1.7px;
@@ -236,7 +236,7 @@
     max-width: 575px;
   }
 
-  .mainTitle {
+  .mainTextContainer .title {
     margin: 0px;
     font-size: 52px;
   }
@@ -300,8 +300,8 @@
 
   .videoButtonIcon {
     margin-right: 0px;
-    width: 64px;
-    height: 64px;
+    width: 52px;
+    height: 52px;
   }
 
   .videoButtonText {
@@ -335,7 +335,7 @@
     width: 500px;
   }
 
-  .mainTitle {
+  .mainTextContainer .title {
     font-size: 38px;
   }
 
@@ -392,7 +392,7 @@
     width: 480px;
   }
 
-  .mainTitle {
+  .mainTextContainer .title {
     margin: 0px;
     font-size: 40px;
     letter-spacing: 1.7px;
@@ -435,14 +435,6 @@
     // background-position: -250px;
   }
 
-  .mainTitle {
-    font-size: 32px;
-  }
-
-  .mainSubtitle {
-    font-size: 20px;
-  }
-
   .phoneMobileLink {
     display: block;
   }
@@ -451,9 +443,16 @@
     margin-top: 140px;
   }
 
+  .mainTextContainer h1 {
+    margin: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
   .mainTextContainer h2 {
     margin: 0px;
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .mainTextContainer p {
@@ -503,5 +502,15 @@
   .massengerItem {
     margin: 0px;
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .mainTextContainer h1 {
+    font-size: 26px;
+  }
+
+  .mainTextContainer p {
+    font-size: 20px;
   }
 }

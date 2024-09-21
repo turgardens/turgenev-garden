@@ -104,6 +104,12 @@
   font-weight: 400;
 }
 
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .aboutAdvantagesItemNumber {
+    font-size: 50px;
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   .aboutAdvantagesList {
     -ms-flex-wrap: wrap;

@@ -32,6 +32,18 @@
   height: 210px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 1450px) {
+  .imageContainerRight .image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .imageContainerLeft .image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   .imageContainerLeft .image {
     width: 120px;

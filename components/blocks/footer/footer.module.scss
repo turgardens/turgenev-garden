@@ -269,7 +269,7 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1440px) {
+@media screen and (min-width: 0px) and (max-width: 1450px) {
   .footer::before {
     top: -79px;
     height: 80px;
@@ -278,6 +278,11 @@
   .footer.footerGray::before {
     top: -79px;
     height: 80px;
+  }
+
+  .headerTopLogo {
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -398,12 +403,12 @@
   }
 
   .footerContactLink {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .footerContactLink.footerContactLinkMap {
     margin-top: 0px;
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .footerContactLink::after {

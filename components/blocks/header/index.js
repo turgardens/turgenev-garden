@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+// import { usePathname } from 'next/navigation';
 
 import styles from './header.module.scss';
 
@@ -51,6 +52,38 @@ export default function Header() {
                                                     transition={{ duration: 0.15, delay: 0.1 }}
                                                 >
                                                     <Link href='/about' className={styles.link} onClick={() => setOpen(false)}>О нас</Link>
+                                                </motion.li>
+                                            </motion.div>
+                                            <motion.div
+                                                className={styles.mobile}
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.9 }}
+                                                transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                                <motion.li
+                                                    className={styles.item}
+                                                    key="about"
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
+                                                    exit={{ scale: 0 }}
+                                                    transition={{ duration: 0.15, delay: 0.1 }}
+                                                >
+                                                    <Link href='/gardens' className={styles.link} onClick={() => setOpen(false)}>Сады</Link>
+                                                </motion.li>
+                                            </motion.div>
+                                            <motion.div
+                                                className={styles.mobile}
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.9 }}
+                                                transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                                                <motion.li
+                                                    className={styles.item}
+                                                    key="about"
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
+                                                    exit={{ scale: 0 }}
+                                                    transition={{ duration: 0.15, delay: 0.1 }}
+                                                >
+                                                    <Link href='/manufacture' className={styles.link} onClick={() => setOpen(false)}>Производство</Link>
                                                 </motion.li>
                                             </motion.div>
                                             <motion.div

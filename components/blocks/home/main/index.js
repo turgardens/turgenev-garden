@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 import styles from "./main.module.scss";
 
-import juice from '../../../../public/img/main/apple-juice.webp';
+import juice from '@/public/img/main/apple-juice.webp';
 
 export default function Main() {
     const [isLoading, setIsLoading] = React.useState();
@@ -41,8 +41,8 @@ export default function Main() {
                         </div>
 
                         <div className={styles.mainTextContainer}>
-                            <h1 className={styles.mainTitle}>Новые вкусы,<br /> новые впечатления!</h1>
-                            <p className={styles.mainSubtitle}>Интересные сочетания, яркие вкусы, прямой отжим и высочайшее качество</p>
+                            <h1 className={styles.title}>Новые вкусы, новые впечатления!</h1>
+                            <p>Интересные сочетания, яркие вкусы, прямой отжим и высочайшее качество</p>
 
                             <div className={styles.mainButtonsContainer}>
                                 <div className={styles.mainButtons}>

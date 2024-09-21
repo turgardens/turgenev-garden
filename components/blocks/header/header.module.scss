@@ -71,7 +71,7 @@
 
 .link:hover {
   // background: #6cb71d;
-  background: #333;
+  background: #e83028;
 }
 
 .item:hover .link {
@@ -112,8 +112,8 @@
   transition: 0.2s;
 }
 
-.toggleDesktop.active {
-  background: #333;
+.toggle.toggleDesktop.active {
+  background: #e83028;
   color: #fff;
 }
 
@@ -148,13 +148,21 @@
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1450px) {
-  .item {
-    padding: 0 30px;
+  .link {
+    padding: 16px 16px;
+    font-size: 16px;
   }
 
-  .link {
+  .toggle.toggleDesktop {
+    padding: 16px 20px;
     font-size: 16px;
+    background: #fff;
+    color: #111;
   }
 }
 
@@ -163,10 +171,8 @@
     font-size: 14px;
   }
 
-  .item {
-    padding: 0 20px;
-    margin: 0;
-    list-style: none;
+  .toggle.toggleDesktop {
+    font-size: 14px;
   }
 }
 
@@ -202,6 +208,10 @@
     display: block;
   }
 
+  .mobile {
+    display: block;
+  }
+
   .toggle.toggleDesktop {
     display: none;
   }
@@ -229,7 +239,7 @@
   }
 
   .fullscreen {
-    right: 20px;
+    right: 60px;
     top: 85px;
     left: unset;
     height: auto;
@@ -282,6 +292,12 @@
     color: #111;
   }
   /* Выпадающее меню */
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .fullscreen {
+    right: 20px;
+  }
 }
 
 /* menu */
