@@ -48,7 +48,7 @@ export default function Compound() {
 
                         <ul className={styles.list}>
                             <li className={styles.item}>Мы отбираем только лучшие яблоки из собственного сада</li>
-                            <li className={styles.item}>Тестируем воду и проверяем готовый продукт в лаборатории на вкусовые качества и безопасность</li>
+                            <li className={styles.item}>Только чистый яблочный сок без воды — 100% натуральный продукт в каждой пачке</li>
                             <li className={styles.item}>Наш сок проходит оценку качества на каждом этапе производства</li>
                         </ul>
 
