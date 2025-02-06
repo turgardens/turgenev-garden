@@ -2,11 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence } from 'framer-motion';
 
 import VariantsButtons from './variantsButtons';
-import FilterButtons from "../filterButtons";
 
 import styles from './product.module.scss';
 import TastesButtons from "./tastesButtons";
@@ -58,7 +56,6 @@ export default function Product({ product }) {
                                             exit={{ opacity: 0 }}
                                         >
                                             <Image
-                                                // key={currentImage + index}
                                                 className={styles.image}
                                                 src={activeVariant}
                                                 alt={product && product.name}
@@ -93,7 +90,7 @@ export default function Product({ product }) {
                                     </h3>
 
                                     <p className={styles.text}>
-                                        Яблочный сок прямого отжима, без добавления сахара, ароматизаторов, красителей, консервантов. содержит сахара природного происхождения, продукт пастеризован и асептически упакован
+                                        {product && product.compound}
                                     </p>
                                 </div>
 
