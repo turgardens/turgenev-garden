@@ -146,7 +146,7 @@ export default function Product({ product }) {
                                 </div>
 
                                 {product.name === 'Яблоко-смородина' &&
-                                    <a href="/public/img/rewards/reward-document.pdf" target="_blank" onMouseOver={() => setRewardTextHover(true)} onMouseOut={() => setRewardTextHover(false)} className={styles.reward}>
+                                    <a href="/reward-document.pdf" rel="noopener noreferrer" target="_blank" onMouseOver={() => setRewardTextHover(true)} onMouseOut={() => setRewardTextHover(false)} className={styles.reward}>
                                         <div className={styles.rewardImageContainer}>
                                             <div className={styles.rewardImageText} />
                                             <Image
