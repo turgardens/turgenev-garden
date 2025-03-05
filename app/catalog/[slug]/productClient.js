@@ -159,7 +159,7 @@ export default function Product({ product }) {
                                         </div>
 
                                         {!rewardTextHover &&
-                                            <p className={styles.rewardText}>Победитель конкурса "ПРОДЭКСПО" в номинации "Инновационный продукт" в категории продукты для здорового образа жизни, г. Москва, 2025 год</p>
+                                            <p className={styles.rewardText}>Победитель конкурса &quot;ПРОДЭКСПО&quot;, номинация &quot;Инновационный продукт&quot; в категории продукты для здорового образа жизни, г. Москва, 2025 год</p>
                                         }
 
                                         {rewardTextHover &&
