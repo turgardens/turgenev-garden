@@ -107,6 +107,63 @@
   object-fit: contain;
 }
 
+.reward {
+  margin-top: 40px;
+
+  display: flex;
+  z-index: 10;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.reward:hover .rewardImageContainer {
+  transform: scale(1.08);
+}
+
+.rewardText {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #111;
+}
+
+.rewardImageContainer {
+  margin-right: 20px;
+  position: relative;
+
+  transition: 0.4s;
+}
+
+.rewardImage {
+  width: 100px;
+  height: 100px;
+}
+
+.rewardImageText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url("../../../public/img/rewards/text.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 5;
+
+  animation: spin 30s linear infinite; /* 10 секунд на полный оборот */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .descriptionTitle {
   margin: 0;
   margin-bottom: 10px;

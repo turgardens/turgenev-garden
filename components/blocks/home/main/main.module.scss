@@ -231,6 +231,52 @@
   object-position: center;
 }
 
+.reward {
+  position: absolute;
+  right: 65px;
+  top: 245px;
+  z-index: 10;
+  text-decoration: none;
+
+  transition: 0.4s;
+}
+
+.reward:hover {
+  transform: scale(1.08);
+}
+
+.rewardImageContainer {
+  position: relative;
+}
+
+.rewardImage {
+  width: 160px;
+  height: 160px;
+}
+
+.rewardImageText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 160px;
+  background-image: url("../../../../public/img/rewards/text.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 5;
+
+  animation: spin 30s linear infinite; /* 10 секунд на полный оборот */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 1950px) {
   .mainTextContainer {
     max-width: 575px;
@@ -252,6 +298,17 @@
     width: 620px;
     height: 720px;
     z-index: 10;
+  }
+
+  .reward {
+    right: -20px;
+    top: 160px;
+  }
+
+  .rewardImage,
+  .rewardImageText {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -315,6 +372,11 @@
   .mainTextContainer p {
     margin-bottom: 30px;
   }
+
+  .reward {
+    right: -40px;
+    bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 930px) {
@@ -366,6 +428,11 @@
 
   .videoButtonText {
     font-size: 16px;
+  }
+
+  .reward {
+    right: -40px;
+    top: 100px;
   }
 
   // .threeObjectContainer {
@@ -481,6 +548,17 @@
   //   width: 400px;
   //   height: 400px;
   // }
+
+  .reward {
+    right: -10px;
+    top: 90px;
+  }
+
+  .rewardImage,
+  .rewardImageText {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 450px) {

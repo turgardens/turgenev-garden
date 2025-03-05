@@ -9,6 +9,8 @@ import VariantsButtons from './variantsButtons';
 import styles from './product.module.scss';
 import TastesButtons from "./tastesButtons";
 
+import rewardImage from '../../../public/img/rewards/icon.svg';
+
 const tastesButtons = [
     {
         id: 1,
@@ -33,6 +35,8 @@ const tastesButtons = [
 export default function Product({ product }) {
     const [activeVariant, setActiveVariant] = React.useState(product.variants && product.variants[0].image);
     const [activeButton, setActiveButton] = React.useState(0);
+
+    const [rewardTextHover, setRewardTextHover] = React.useState(false);
 
     return (
         <>
@@ -61,7 +65,7 @@ export default function Product({ product }) {
                                                 alt={product && product.name}
                                                 width={500}
                                                 height={500}
-                                            ></Image>
+                                            />
                                         </motion.div>
                                     }
                                 </AnimatePresence>
@@ -140,6 +144,29 @@ export default function Product({ product }) {
                                         </li>
                                     </ul>
                                 </div>
+
+                                {product.name === 'Яблоко-смородина' &&
+                                    <a href="/public/img/rewards/reward-document.pdf" target="_blank" onMouseOver={() => setRewardTextHover(true)} onMouseOut={() => setRewardTextHover(false)} className={styles.reward}>
+                                        <div className={styles.rewardImageContainer}>
+                                            <div className={styles.rewardImageText} />
+                                            <Image
+                                                className={styles.rewardImage}
+                                                src={rewardImage}
+                                                alt='Награда ПРОДЭКСПО 2025'
+                                                width={200}
+                                                height={200}
+                                            />
+                                        </div>
+
+                                        {!rewardTextHover &&
+                                            <p className={styles.rewardText}>Победитель конкурса "ПРОДЭКСПО" в номинации "Инновационный продукт" в категории продукты для здорового образа жизни, г. Москва, 2025 год</p>
+                                        }
+
+                                        {rewardTextHover &&
+                                            <p className={styles.rewardText}>Открыть документ в формате PDF</p>
+                                        }
+                                    </a>
+                                }
 
                             </div>
                         </div>

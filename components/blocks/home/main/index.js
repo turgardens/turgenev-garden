@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 import styles from "./main.module.scss";
 
 import juice from '@/public/img/main/apple-juice.webp';
+import rewardImage from '@/public/img/rewards/icon.svg';
 
 export default function Main() {
     const [isLoading, setIsLoading] = React.useState();
@@ -35,6 +36,19 @@ export default function Main() {
                         </div> */}
 
                         <div className={styles.mainImageContainer}>
+                            <Link href='/catalog/juice-apple-currant' className={styles.reward}>
+                                <div className={styles.rewardImageContainer}>
+                                    <div className={styles.rewardImageText} />
+                                    <Image
+                                        className={styles.rewardImage}
+                                        src={rewardImage}
+                                        alt={'Награда ПРОДЭКСПО 2025'}
+                                        width={350}
+                                        height={350}
+                                    />
+                                </div>
+                            </Link>
+
                             {/* <span>Все таки добавить 3d</span> */}
                             <Image className={styles.mainImage} isLoading={() => setIsLoading(true)} src={juice} fill={true}></Image>
                             {/* <ThreeObject minRotate={true} /> */}
@@ -65,7 +79,7 @@ export default function Main() {
 
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     )
 };
