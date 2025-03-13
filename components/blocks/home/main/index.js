@@ -39,6 +39,7 @@ export default function Main() {
                             <Link href='/catalog/juice-apple-currant' className={styles.reward}>
                                 <div className={styles.rewardImageContainer}>
                                     <div className={styles.rewardImageText} />
+                                    <div className={styles.rewardImageBackground} />
                                     <Image
                                         className={styles.rewardImage}
                                         src={rewardImage}

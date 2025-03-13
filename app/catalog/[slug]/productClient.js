@@ -149,6 +149,7 @@ export default function Product({ product }) {
                                     <a href="/reward-document.pdf" rel="noopener noreferrer" target="_blank" onMouseOver={() => setRewardTextHover(true)} onMouseOut={() => setRewardTextHover(false)} className={styles.reward}>
                                         <div className={styles.rewardImageContainer}>
                                             <div className={styles.rewardImageText} />
+                                            <div className={styles.rewardImageBackground} />
                                             <Image
                                                 className={styles.rewardImage}
                                                 src={rewardImage}

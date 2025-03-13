@@ -130,7 +130,7 @@
 }
 
 .rewardImageContainer {
-  margin-right: 20px;
+  margin-right: 38px;
   position: relative;
 
   transition: 0.4s;
@@ -139,6 +139,18 @@
 .rewardImage {
   width: 100px;
   height: 100px;
+}
+
+.rewardImageBackground {
+  position: absolute;
+  left: -29px;
+  top: -20px;
+  width: 220px;
+  height: 220px;
+  background-image: url("../../../public/img/rewards/background.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
 }
 
 .rewardImageText {
@@ -338,12 +350,31 @@
 
   .imageContainer {
     height: auto;
-    max-height: 650px;
-    min-height: 300px;
+    max-height: 450px;
+    min-height: 200px;
   }
 
   .reward {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+  }
+
+  .rewardImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rewardImageBackground {
+    position: absolute;
+    left: -22px;
+    top: -15px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .rewardImage,
+  .rewardImageText {
+    width: 85px;
+    height: 85px;
   }
 }

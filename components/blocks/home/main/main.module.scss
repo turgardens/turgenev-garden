@@ -250,16 +250,28 @@
 }
 
 .rewardImage {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
+}
+
+.rewardImageBackground {
+  position: absolute;
+  left: -38px;
+  top: -25px;
+  width: 298px;
+  height: 298px;
+  background-image: url("../../../../public/img/rewards/background.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
 }
 
 .rewardImageText {
   position: absolute;
   left: 0;
   top: 0;
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   background-image: url("../../../../public/img/rewards/text.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -302,13 +314,25 @@
 
   .reward {
     right: -20px;
-    top: 160px;
+    top: 240px;
   }
 
   .rewardImage,
   .rewardImageText {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .rewardImageBackground {
+    position: absolute;
+    left: -33px;
+    top: -22px;
+    width: 257px;
+    height: 257px;
+    background-image: url("../../../../public/img/rewards/background.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
   }
 }
 
@@ -374,8 +398,27 @@
   }
 
   .reward {
-    right: -40px;
-    bottom: 80px;
+    top: unset;
+    right: -60px;
+    bottom: 220px;
+  }
+
+  .rewardImage,
+  .rewardImageText {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rewardImageBackground {
+    position: absolute;
+    left: -29px;
+    top: -20px;
+    width: 220px;
+    height: 220px;
+    background-image: url("../../../../public/img/rewards/background.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
   }
 }
 
@@ -550,14 +593,26 @@
   // }
 
   .reward {
-    right: -10px;
+    right: 20px;
     top: 90px;
   }
 
   .rewardImage,
   .rewardImageText {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .rewardImageBackground {
+    position: absolute;
+    left: -20px;
+    top: -13px;
+    width: 125px;
+    height: 200px;
+    background-image: url("../../../../public/img/rewards/background.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
   }
 }
 
