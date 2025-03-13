@@ -233,8 +233,8 @@
 
 .reward {
   position: absolute;
-  right: 65px;
-  top: 245px;
+  right: 140px;
+  top: 280px;
   z-index: 10;
   text-decoration: none;
 
@@ -319,16 +319,16 @@
 
   .rewardImage,
   .rewardImageText {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .rewardImageBackground {
     position: absolute;
-    left: -33px;
-    top: -22px;
-    width: 257px;
-    height: 257px;
+    left: -29px;
+    top: -20px;
+    width: 220px;
+    height: 220px;
     background-image: url("../../../../public/img/rewards/background.webp");
     background-repeat: no-repeat;
     background-size: contain;
@@ -399,7 +399,7 @@
 
   .reward {
     top: unset;
-    right: -60px;
+    right: 0px;
     bottom: 220px;
   }
 
