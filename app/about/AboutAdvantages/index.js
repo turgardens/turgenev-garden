@@ -37,7 +37,7 @@ export default function AboutAdvantages() {
                         </li>
                         <li className={styles.aboutAdvantagesItem}>
                             <span className={styles.aboutAdvantagesItemNumber}>
-                                1300
+                                1200
                             </span>
                             <p className={styles.aboutAdvantagesItemText}>
                                 Пачек сока производим в сутки
