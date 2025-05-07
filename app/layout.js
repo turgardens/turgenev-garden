@@ -36,12 +36,11 @@ export default function RootLayout({ children }) {
         accurateTrackBounce:true
    });`}
         </Script>
-
-        <Script>
+        <Script id="replainWidget">
           {`window.replainSettings = {id: '49f32c92-240b-4202-a1a9-d333eef48658' };
-          (function(u){var s=document.createElement('script');s.async=true;s.src=u;
-          var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');`}
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+    var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+  })('https://widget.replain.cc/dist/client.js');`}
         </Script>
       </head>
 
